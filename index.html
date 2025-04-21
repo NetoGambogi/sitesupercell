@@ -1,35 +1,38 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>SuperCell Navbar</title>
-  <link rel="stylesheet" href="catalogo.css"> <!-- Vinculando o CSS -->
+  <title>SuperCell</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Parte de cima -->
-  <div class="navbar">
-    <div>
-      <img src="imagens/supercelllogo.png" alt="Logo da Loja" style="height: 110px; width:155px;">
+<header>
+  <!-- NavBar -->
+  <nav>
+    <div class="navbar">
+      <div>
+        <img src="imagens/supercelllogo.png" alt="Logo SuperCell" style="height: 110px; width:155px;">
+      </div>
+      <button class="btn-contato">
+          ENTRE EM CONTATO PARA ORÇAMENTO RÁPIDO
+        <img src="imagens/whatsapp.png" alt="WhatsApp" style="height: 30px;">
+      </button>
     </div>
-    <button class="btn-contato">
-      ENTRE EM CONTATO PARA ORÇAMENTO RÁPIDO
-      <img src="imagens/whatsapp.png" alt="WhatsApp" style="height: 30px;">
-    </button>
-  </div>
 
-  <!-- Menu inferior -->
-  <div class="menu-bar">
-    <div class="search-container">
-      <!-- Lupa no começo da barra de pesquisa -->
-      <img src="imagens/lupa.png" alt="Lupa" class="search-icon">
-      <input type="text" class="search-box" placeholder="Buscar...">
+    <div class="menu-bar">
+      <div class="search-container">
+        <img src="imagens/lupa.png" alt="Campo de pesquisa" class="search-icon">
+        <input type="text" class="search-box" placeholder="Buscar...">
+      </div>
+      <a href="#" class="menu-item">SERVIÇOS</a>
+      <a href="#" class="menu-item">PRODUTOS</a>
+      <a href="#" class="menu-item">SOBRE A LOJA</a>
+      <a href="#" class="menu-item">CONTATO</a>
     </div>
-    <a href="#" class="menu-item">SERVIÇOS</a>
-    <a href="#" class="menu-item">PRODUTOS</a>
-    <a href="#" class="menu-item">SOBRE A LOJA</a>
-    <a href="#" class="menu-item">CONTATO</a>
-  </div>
+  </nav>
+
+</header>
 
 </body>
 </html>
