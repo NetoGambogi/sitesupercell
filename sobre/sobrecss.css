@@ -159,3 +159,29 @@ body {
 .main .right img {
   width: 500px;
 }
+
+.especialistas {
+  text-align: center;
+  padding: 60px 30px;
+  margin-top: 100px;
+}
+
+.especialistas h2 {
+  font-weight: bold;
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+
+.logomarcas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.logomarcas img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
