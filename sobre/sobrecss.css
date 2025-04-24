@@ -337,6 +337,92 @@ footer .informacoes .links a {
 
 /* Responsividade */
 
+@media (max-width: 768px) {
+  
+  .main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .main .left {
+    align-items: center;
+  }
+
+  .main .left h3 {
+    font-size: 24px;
+  }
+
+  .main .left p {
+    font-size: 18px;
+    max-width: 90%;
+  }
+
+  .main .left button {
+    font-size: 18px;
+    padding: 12px 28px;
+  }
+
+  .main .right img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 30px;
+  }
+  
+  footer {
+    padding: 30px 20px;
+  }
+
+  footer .topo,
+  footer .informacoes {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .topo ul {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  footer .topo .contato {
+    font-size: 20px;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  footer .topo .logo img {
+    height: 80px;
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  footer .separador {
+    margin: 20px 0;
+  }
+
+  footer .informacoes p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  footer .informacoes .links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  footer .informacoes .links a {
+    font-size: 14px;
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 576px) {
   
   .main {
