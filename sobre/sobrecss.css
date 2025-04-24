@@ -330,3 +330,81 @@ footer .informacoes .links a {
   text-decoration: none;
   color: inherit;
 }
+
+/* Responsividade */
+
+@media (max-width: 576px) {
+  .main {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main .left {
+    align-items: center;
+  }
+
+  .main .left h3 {
+    font-size: 24px;
+  }
+
+  .main .left p {
+    font-size: 18px;
+    max-width: 90%;
+  }
+
+  .main .left button {
+    font-size: 18px;
+    padding: 12px 28px;
+  }
+
+  .main .right img {
+    width: 100%;
+  }
+
+  footer {
+    padding: 30px 20px;
+  }
+
+  footer .topo {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  footer .topo ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer .topo .contato {
+    justify-content: center;
+    font-size: 22px;
+  }
+
+  footer .topo .logo img {
+    width: 120px;
+    height: auto;
+  }
+
+  footer .informacoes {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  footer .informacoes .links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 10px;
+  }
+
+  footer .informacoes p,
+  footer .informacoes .links a {
+    font-size: 14px;
+  }
+}
