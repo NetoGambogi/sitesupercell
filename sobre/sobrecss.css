@@ -334,6 +334,7 @@ footer .informacoes .links a {
 /* Responsividade */
 
 @media (max-width: 576px) {
+  
   .main {
     padding: 20px;
     flex-direction: column;
