@@ -14,7 +14,6 @@ html, body {
 }
 
 body {
-    background-color: #d9d9d9;
     margin: 0;
     font-family: Arial, sans-serif;
   }
@@ -351,17 +350,17 @@ footer .informacoes .links a {
     gap: 10px;
 }
 
-.busca {
+  .busca {
     width: 100%;
     justify-content: center;
     order: 2;
 }
 
-.campo-busca {
+  .campo-busca {
     width: 90%;
 }
 
-.item-menu {
+  .item-menu {
     text-align: center;
     width: 100%;
     padding: 8px 0;
