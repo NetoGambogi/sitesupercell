@@ -18,16 +18,16 @@ body {
     font-family: Arial, sans-serif;
   }
   
-  .navbar {
+  .cabecalho {
     background-color: #000;
     color: white;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .btn-contato {
+}
+
+.botao-contato {
     background-color: #c06400;
     color: white;
     padding: 10px 20px;
@@ -38,56 +38,66 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-  }
-  
-  .btn-contato:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.botao-contato:hover {
     background-color: #a05200;
-  }
-  
-  .menu-bar {
+}
+
+/* Menu principal */
+.barra-menu {
     background-color: #c06400;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 10px 20px;
+    white-space: nowrap;
     gap: 20px;
-  }
-  
-  .search-container {
+}
+
+.busca {
     display: flex;
     align-items: center;
     background-color: #a05200;
     border-radius: 20px;
-    padding: 5px;
-  }
-  
-  .search-box {
+    padding: 5px 10px;
+    min-width: 400px; 
+    flex-grow: 1;
+    max-width: 600px;
+}
+
+.campo-busca {
     background-color: #a05200;
     border: none;
     padding: 10px;
     border-radius: 20px;
     color: white;
     outline: none;
-  }
-  
-  .search-box::placeholder {
-    color: #ffffff; 
-  }
-  
-  .search-icon {
+    width: 100%;
+}
+
+
+.campo-busca::placeholder {
+    color: #ffffff;
+}
+
+.icone-busca {
     height: 20px;
     margin-left: 10px;
     cursor: pointer;
-  }
-  
-  .menu-item {
+}
+
+.item-menu {
     color: white;
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  .menu-item:hover {
+}
+
+.item-menu:hover {
     text-decoration: underline;
-  }
+}
   
 /*  COMECE O CSS DA PÁGINA ABAIXO  */
 
@@ -338,6 +348,30 @@ footer .informacoes .links a {
 /* Responsividade */
 
 @media (max-width: 768px) {
+
+  .barra-menu {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.busca {
+    width: 100%;
+    justify-content: center;
+    order: 2;
+}
+
+.campo-busca {
+    width: 90%;
+}
+
+.item-menu {
+    text-align: center;
+    width: 100%;
+    padding: 8px 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    order: 1;
+}
   
   .main {
     flex-direction: column;
