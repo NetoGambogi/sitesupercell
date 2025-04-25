@@ -46,7 +46,6 @@ body {
     background-color: #a05200;
 }
 
-/* Menu principal */
 .barra-menu {
     background-color: #c06400;
     display: flex;
@@ -98,8 +97,6 @@ body {
 .item-menu:hover {
     text-decoration: underline;
 }
-  
-/*  COMECE O CSS DA PÁGINA ABAIXO  */
 
 .breadcrumb {
   font-family: sans-serif;
@@ -344,8 +341,6 @@ footer .informacoes .links a {
   text-decoration: none;
   color: inherit;
 }
-
-/* Responsividade */
 
 @media (max-width: 768px) {
 
