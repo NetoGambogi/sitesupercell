@@ -17,7 +17,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
   }
-  
+
   .cabecalho {
     background-color: #000;
     color: white;
@@ -380,16 +380,16 @@ footer .informacoes .links a {
   }
 
   .main .left h3 {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   .main .left p {
-    font-size: 18px;
+    font-size: 21px;
     max-width: 90%;
   }
 
   .main .left button {
-    font-size: 18px;
+    font-size: 21px;
     padding: 12px 28px;
   }
 
@@ -466,11 +466,11 @@ footer .informacoes .links a {
   }
 
   .main .left h3 {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   .main .left p {
-    font-size: 18px;
+    font-size: 21px;
     max-width: 90%;
   }
 
