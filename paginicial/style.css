@@ -112,3 +112,49 @@ body {
       order: 1;
   }
 }
+
+/* Carrossel de produtos */
+.carrossel-prod {
+  overflow-x: auto;
+  white-space: nowtrap;
+  padding: 15px;
+  background: #e0e0e0;
+  border-top: 5px solid #c77d0a;
+}
+
+.carrossel {
+  display: flex;
+  gap: 10px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 100px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item img{
+  width: 50px;
+  width: 50px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+.item span {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+/* Carrossel de produtos */
