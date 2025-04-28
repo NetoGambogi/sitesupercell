@@ -87,13 +87,39 @@ body {
 
 /* Navegação */
 .caminho-pagina {
-    margin: 20px;
-    font-size: 18px;
-    font-weight: bold;
+  margin: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
 }
 
-.caminho-pagina .inicio {
-    color: orange;
+.caminho-pagina li {
+  display: flex;
+  align-items: center;
+}
+
+/* Insere o separador '>' entre os itens */
+.caminho-pagina li + li::before {
+  content: ">";
+  margin: 0 8px;
+  color: #666;
+}
+
+.caminho-pagina .inicio a {
+  text-decoration: none;
+  color: #000;
+}
+
+.caminho-pagina .pagina-atual a {
+  text-decoration: none;
+  color: #000;
+}
+
+.caminho-pagina .compra {
+  color: orange;
 }
 
 .area-filtros {
