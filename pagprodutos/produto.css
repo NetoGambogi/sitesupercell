@@ -101,7 +101,6 @@ body {
   align-items: center;
 }
 
-/* Insere o separador '>' entre os itens */
 .caminho-pagina li + li::before {
   content: ">";
   margin: 0 8px;
@@ -113,7 +112,7 @@ body {
   color: #000;
 }
 
-.caminho-pagina .pagina-atual a {
+.caminho-pagina .pg-catalogo a {
   text-decoration: none;
   color: #000;
 }
