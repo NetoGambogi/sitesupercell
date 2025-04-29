@@ -353,6 +353,50 @@ footer .informacoes .links a {
   color: inherit;
 }
 
+@media (max-width: 1200px) {
+  .main {
+    padding: 40px 40px;
+    gap: 30px;
+  }
+
+  .main .left h3 {
+    font-size: 26px;
+  }
+
+  .main .left p {
+    font-size: 18px;
+  }
+
+  .main .right img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .main .left {
+    align-items: center;
+  }
+
+  .main .left h3 {
+    font-size: 24px;
+  }
+
+  .main .left p {
+    font-size: 18px;
+  }
+
+  .main .right img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
 @media (max-width: 768px) {
 
   .barra-menu {
@@ -486,7 +530,7 @@ footer .informacoes .links a {
   }
 
   .main .left button {
-    font-size: 18px;
+    font-size: 21px;
     padding: 12px 28px;
   }
 
