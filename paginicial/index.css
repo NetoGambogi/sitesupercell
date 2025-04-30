@@ -88,8 +88,10 @@ body {
 
 /* Carrossel de produtos */
 .carrossel-prod {
+  display: flex;
+  justify-content: center;
   overflow-x: auto;
-  white-space: nowtrap;
+  white-space: nowrap;
   padding: 15px;
   background: #e0e0e0;
   border-top: 5px solid #c77d0a;
@@ -118,9 +120,9 @@ body {
   transform: scale(1.05);
 }
 
-.item img{
-  width: 50px;
-  width: 50px;
+.item img {
+  width: 75px;
+  height: 75px; /* Corrigido aqui */
   object-fit: contain;
   margin-bottom: 5px;
 }
