@@ -211,4 +211,22 @@ body {
       border-top: 1px solid rgba(255,255,255,0.2);
       order: 1;
   }
+
+  .container {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .servicos {
+    height: auto;
+  }
+
+  .servicos img {
+    width: 120px; 
+  }
+
+  .servicos p {
+    font-size: 19px;
+  }
 }
