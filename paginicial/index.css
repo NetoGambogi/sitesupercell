@@ -93,8 +93,7 @@ body {
   overflow-x: auto;
   white-space: nowrap;
   padding: 15px;
-  background: #e0e0e0;
-  border-top: 5px solid #c77d0a;
+
 }
 
 .carrossel {
@@ -106,14 +105,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between; /* Para espaçar melhor o conteúdo */
   background: white;
   border: 2px solid black;
   border-radius: 10px;
   padding: 10px;
-  min-width: 100px;
+  width: 120px;       /* Tamanho fixo */
+  height: 150px;      /* Tamanho fixo */
   cursor: pointer;
   flex-shrink: 0;
   transition: transform 0.2s;
+  box-sizing: border-box;
 }
 
 .item:hover {
@@ -122,7 +124,7 @@ body {
 
 .item img {
   width: 75px;
-  height: 75px; /* Corrigido aqui */
+  height: 75px;
   object-fit: contain;
   margin-bottom: 5px;
 }
@@ -138,6 +140,7 @@ body {
 .assitencia {
     padding: 50px 85px 50px;
     margin-bottom: 100px;
+    text-align: center;
 }
 
 .assitencia h3 {
@@ -162,9 +165,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.assitencia .skill-itens .item:hover {
-    border-color: #5e3bee;
-}
+
 
 .assitencia .skill-itens .item .imagem {
     display: flex;
