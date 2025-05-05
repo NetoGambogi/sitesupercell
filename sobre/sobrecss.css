@@ -19,6 +19,13 @@ body {
     background-color: #d9d9d9;
   }
 
+
+.logo img {
+  height: 110px;
+  width: 155px;
+  margin-left: 50px;
+}
+
   .cabecalho {
     background-color: #000;
     color: white;
@@ -166,7 +173,7 @@ body {
   margin-top: 15px;
 }
 
-.main .left button {
+.main .left .contato-main {
   background-color: #c06400;
   color: white;
   padding: 10px 20px;
@@ -175,6 +182,11 @@ body {
   font-weight: bold;
   cursor: pointer;
   margin-top: 20px;
+  text-decoration: none;
+}
+
+.main .left .contato-main:hover {
+  background-color: #a05200;
 }
 
 .main .right img {
@@ -444,7 +456,7 @@ footer .informacoes .links a {
     max-width: 90%;
   }
 
-  .main .left button {
+  .main .left .contato-main {
     font-size: 21px;
     padding: 12px 28px;
   }
@@ -485,6 +497,7 @@ footer .informacoes .links a {
     height: 80px;
     width: auto;
     margin-bottom: 20px;
+    margin-left: 0;
   }
 
   footer .separador {
@@ -530,7 +543,7 @@ footer .informacoes .links a {
     max-width: 90%;
   }
 
-  .main .left button {
+  .main .left .contato-main {
     font-size: 21px;
     padding: 12px 28px;
   }
@@ -563,6 +576,7 @@ footer .informacoes .links a {
   footer .topo .logo img {
     width: 120px;
     height: auto;
+    margin-left: 0;
   }
 
   footer .informacoes {
