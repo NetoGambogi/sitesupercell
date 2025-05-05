@@ -5,6 +5,13 @@ body {
 }
 
 /* Cabeçalho */
+
+.logo img {
+  height: 110px;
+  width: 155px;
+  margin-left: 50px;
+}
+
 .cabecalho {
     background-color: #000;
     color: white;
@@ -339,10 +346,12 @@ footer {
       }
     
     footer .topo .logo img {
-        height: 80px;
-        width: auto;
-        margin-bottom: 20px;
-      }
+      height: 100px;
+      width: auto;
+      margin-bottom: 20px;
+      margin-left: 0;
+    }
+    
     
     footer .separador {
         margin: 20px 0;
@@ -363,55 +372,8 @@ footer {
         font-size: 14px;
         margin-left: 0;
       }
-
-      @media (max-width: 576px) {
-
-    footer {
-      padding: 30px 20px;
-    }
-  
-    footer .topo {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      text-align: center;
-    }
-  
-    footer .topo ul {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    footer .topo .contato {
-      justify-content: center;
-      font-size: 22px;
-    }
-  
-    footer .topo .logo img {
-      width: 120px;
-      height: auto;
-    }
-  
-    footer .informacoes {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: 10px;
-    }
-  
-    footer .informacoes .links {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      margin-top: 10px;
-    }
-  
-    footer .informacoes p,
-    footer .informacoes .links a {
-      font-size: 14px;
-    }
-  }
 }
+
 
 @media (max-width: 576px) {
 
@@ -437,8 +399,9 @@ footer {
     }
   
     footer .topo .logo img {
-      width: 120px;
-      height: auto;
+      width: auto;
+      height: 100px;
+      margin-left: 0;
     }
   
     footer .informacoes {
