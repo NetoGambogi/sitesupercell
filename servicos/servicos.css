@@ -20,6 +20,13 @@ body {
   }
 
 /* Cabeçalho */
+
+.logo img {
+  height: 110px;
+  width: 155px;
+  margin-left: 50px;
+}
+
 .cabecalho {
   background-color: #000;
   color: white;
@@ -259,6 +266,10 @@ body {
   cursor: pointer;
 }
 
+.contato button:hover {
+  background-color: #a05200;
+}
+
 footer {
   background-color: #000000;
   color: white;
@@ -389,10 +400,12 @@ footer .informacoes .links a {
   }
 
   footer .topo .logo img {
-    height: 80px;
+    height: 100px;
     width: auto;
     margin-bottom: 20px;
+    margin-left: 0;
   }
+
 
   footer .separador {
     margin: 20px 0;
@@ -439,8 +452,9 @@ footer .informacoes .links a {
   }
 
   footer .topo .logo img {
-    width: 120px;
-    height: auto;
+    width: auto;
+    height: 100px;
+    margin-left: 0;
   }
 
   footer .informacoes {
