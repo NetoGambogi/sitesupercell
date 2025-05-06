@@ -3,34 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>SuperCell - Finalizar a compra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="produto.css">
 </head>
 <body>
 
     <!-- Cabeçalho -->
-    <div class="cabecalho">
-        <div class="logo">
+    <header>
+      <nav>
+        <div class="cabecalho">
+          <div class="logo">
             <a href="index.html">
-            <img src="img.produtos/supercelllogo.png" alt="Logo da Loja">
+              <img src="img.produtos/supercelllogo.png" alt="Assistência técnica SuperCell">
             </a>
+          </div>
+    
+          <button class="menu-toggle" aria-label="Abrir menu">
+            <img src="img.produtos/menu.png" alt="Menu" style="height: 30px;">
+          </button>
+    
+          <a class="botao-contato" href="https://w.app/supercell" target="_blank">
+            ENTRE EM CONTATO PARA ORÇAMENTO RÁPIDO 
+            <img src="img.produtos/whatsapp.png" alt="WhatsApp" style="height: 30px;">
+          </a>
         </div>
-        <a class="botao-contato" href="https://w.app/supercell" target="_blank">
-        ENTRE EM CONTATO PARA ORÇAMENTO RÁPIDO 
-        <img src="img.produtos/whatsapp.png" alt="WhatsApp" style="height: 30px;"></a>
-    </div>
-
-    <!-- Menu principal -->
-    <div class="barra-menu">
-        <div class="busca">
+    
+        <div class="barra-menu">
+          <div class="busca">
             <img src="img.produtos/lupa.png" alt="Lupa" class="icone-busca">
             <input type="text" class="campo-busca" placeholder="Buscar...">
+          </div>
+          <a href="servicos.html" class="item-menu">SERVIÇOS</a>
+          <a href="pagina-catalogo.html" class="item-menu">PRODUTOS</a>
+          <a href="sobre.html" class="item-menu">SOBRE A LOJA</a>
+          <a href="https://w.app/supercell" target="_blank" class="item-menu">CONTATO</a>
         </div>
-        <a href="servicos.html" class="item-menu">SERVIÇOS</a>
-        <a href="pagina-catalogo.html" class="item-menu">PRODUTOS</a>
-        <a href="sobre.html" class="item-menu">SOBRE A LOJA</a>
-        <a href="https://w.app/supercell" target="_blank" class="item-menu">CONTATO</a>
-    </div>
+      </nav>
+    </header>
+
+  <script src="script.js"></script>
 
      <!-- Script Vlibras -->
      <div vw class="enabled">

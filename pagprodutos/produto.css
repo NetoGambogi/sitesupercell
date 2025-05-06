@@ -9,10 +9,10 @@ body {
 .logo img {
   height: 110px;
   width: 155px;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
-.cabecalho {
+  .cabecalho {
     background-color: #000;
     color: white;
     padding: 10px 20px;
@@ -32,7 +32,6 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #ffffff;
     text-decoration: none;
 }
 
@@ -40,7 +39,6 @@ body {
     background-color: #a05200;
 }
 
-/* Menu principal */
 .barra-menu {
     background-color: #c06400;
     display: flex;
@@ -72,6 +70,7 @@ body {
     width: 100%;
 }
 
+
 .campo-busca::placeholder {
     color: #ffffff;
 }
@@ -90,6 +89,13 @@ body {
 
 .item-menu:hover {
     text-decoration: underline;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  display: none;
+  cursor: pointer;
 }
 
 /* Navegação */
@@ -323,29 +329,43 @@ footer {
 
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
-    .barra-menu {
-        flex-direction: column-reverse;
-        align-items: stretch;
-        gap: 10px;
-    }
+  .menu-toggle {
+    display: block;
+    margin-right: 40px;
+  }
 
-    .busca {
-        width: 100%;
-        justify-content: center;
-        order: 2;
-    }
+  .botao-contato {
+   display: none;
+   }
 
-    .campo-busca {
-        width: 90%;
-    }
+  .barra-menu {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
 
-    .item-menu {
-        text-align: center;
-        width: 100%;
-        padding: 8px 0;
-        border-top: 1px solid rgba(255,255,255,0.2);
-        order: 1;
-    }
+  .barra-menu.ativo {
+    display: flex;
+  }
+
+  .busca {
+    width: 100%;
+    justify-content: center;
+    order: 1;
+  }
+
+  .campo-busca {
+    width: 90%;
+  }
+
+  .item-menu {
+    text-align: center;
+    width: 100%;
+    padding: 8px 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    order: 2;
+  }
 
     footer {
         padding: 30px 20px;
