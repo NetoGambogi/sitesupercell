@@ -1,0 +1,414 @@
+body {
+  background-color: #d9d9d9;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+
+.logo img {
+  height: 110px;
+  width: 155px;
+  margin-left: 40px;
+}
+
+  .cabecalho {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botao-contato {
+    background-color: #c06400;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.botao-contato:hover {
+    background-color: #a05200;
+}
+
+.barra-menu {
+    background-color: #c06400;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 20px;
+    white-space: nowrap;
+    gap: 20px;
+}
+
+.busca {
+    display: flex;
+    align-items: center;
+    background-color: #a05200;
+    border-radius: 20px;
+    padding: 5px 10px;
+    min-width: 400px; 
+    flex-grow: 1;
+    max-width: 600px;
+}
+
+.campo-busca {
+    background-color: #a05200;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    outline: none;
+    width: 100%;
+}
+
+
+.campo-busca::placeholder {
+    color: #ffffff;
+}
+
+.icone-busca {
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.item-menu {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.item-menu:hover {
+    text-decoration: underline;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  display: none;
+  cursor: pointer;
+}
+
+/* Carrossel de produtos */
+.carrossel-prod {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 15px;
+
+}
+
+.carrossel {
+  display: flex;
+  gap: 10px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; 
+  background: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  width: 120px;    
+  height: 150px;     
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+  box-sizing: border-box;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item img {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+.item span {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+/* Carrossel de produtos */
+
+/* Assistência técnica em celulares e tablets */
+.assitencia {
+    padding: 50px 85px 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.assitencia h3 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.assitencia .skill-itens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px
+}
+
+.assitencia .skill-itens .item {
+    background-color:rgb(255, 255, 255);
+    width: 250px;
+    border-radius: 10px;
+    padding: 32px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+
+
+.assitencia .skill-itens .item .imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+}
+
+.assitencia .skill-itens .item .imagem i {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    font-size: 26px;
+    color: black;
+}
+
+.assitencia .skill-itens .item h4 { 
+    font-size: 21px
+}
+
+.assitencia .skill-itens .item p{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 22px;
+    color:black;
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .topo,
+footer .informacoes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .topo ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .topo ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+}
+
+footer .topo .contato {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 25px;
+}
+
+footer .topo .contato a i {
+  color: white; 
+  transition: color 0.3s ease;
+}
+
+footer .separador {
+  width: 100%;
+  height: 1px;
+  background-color: #bdbdbd;
+  margin: 30px 0 20px;
+}
+
+footer .informacoes p {
+  font-size: 16px;
+}
+
+footer .informacoes .links a {
+  font-size: 16px;
+  margin-left: 14px;
+  text-decoration: none;
+  color: inherit;
+}
+  
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+    margin-right: 40px;
+  }
+
+  .botao-contato {
+   display: none;
+   }
+
+  .barra-menu {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .barra-menu.ativo {
+    display: flex;
+  }
+
+  .busca {
+    width: 100%;
+    justify-content: center;
+    order: 1;
+  }
+
+  .campo-busca {
+    width: 90%;
+  }
+
+  .item-menu {
+    text-align: center;
+    width: 100%;
+    padding: 8px 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    order: 2;
+  }
+
+  footer {
+    padding: 30px 20px;
+  }
+
+  footer .topo,
+  footer .informacoes {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .topo ul {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  footer .topo .contato {
+    font-size: 20px;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  footer .topo .logo img {
+    height: 100px;
+    width: auto;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+
+  footer .separador {
+    margin: 20px 0;
+  }
+
+  footer .informacoes p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  footer .informacoes .links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  footer .informacoes .links a {
+    font-size: 14px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+
+  footer {
+    padding: 30px 20px;
+  }
+
+  footer .topo {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  footer .topo ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer .topo .contato {
+    justify-content: center;
+    font-size: 22px;
+  }
+
+  footer .topo .logo img {
+    width: auto;
+    height: 100px;
+    margin-left: 0;
+  }
+
+  footer .informacoes {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  footer .informacoes .links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 10px;
+  }
+
+  footer .informacoes p,
+  footer .informacoes .links a {
+    font-size: 14px;
+  }
+}
