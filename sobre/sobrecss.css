@@ -1,3 +1,5 @@
+  /* Configs Gerais */
+
 html {
   scroll-behavior: smooth;
 }
@@ -19,6 +21,7 @@ body {
     background-color: #d9d9d9;
   }
 
+  /* NavBar */
 
   .logo img {
     height: 110px;
@@ -112,6 +115,8 @@ body {
     cursor: pointer;
   }
 
+/* Início */
+
 .breadcrumb {
   font-family: sans-serif;
   font-size: 18px;
@@ -200,6 +205,8 @@ body {
   width: 500px;
 }
 
+/* Especialidades */
+
 .especialistas {
   text-align: center;
   padding: 60px 30px;
@@ -225,6 +232,8 @@ body {
   height: 100px;
   object-fit: contain;
 }
+
+/* Estrutura */
 
 .estrutura {
   text-align: center;
@@ -261,6 +270,8 @@ body {
   padding: 30px;
   line-height: 1.6;
 }
+
+/* Endereço */
 
 .endereco {
   text-align: center;
@@ -313,6 +324,8 @@ body {
   font-size: 18px;
   color: #000;
 }
+
+/* Rodapé */
 
 footer {
   background-color: #000000;
@@ -373,6 +386,8 @@ footer .informacoes .links a {
   color: inherit;
 }
 
+/* Responsividade 1200px */
+
 @media (max-width: 1200px) {
   .main {
     padding: 40px 40px;
@@ -391,6 +406,8 @@ footer .informacoes .links a {
     width: 400px;
   }
 }
+
+/* Responsividade 992px */
 
 @media (max-width: 992px) {
   .main {
@@ -416,6 +433,8 @@ footer .informacoes .links a {
     max-width: 400px;
   }
 }
+
+/* Responsividade 768px */
 
 @media (max-width: 768px) {
 
@@ -541,6 +560,8 @@ footer .informacoes .links a {
     margin-left: 0;
   }
 }
+
+/* Responsividade 576px */
 
 @media (max-width: 576px) {
   
