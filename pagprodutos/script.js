@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', function () {
     botaoContato.classList.toggle('ativo');
 
     if (isMenuActive) {
-      toggleIcon.src = 'img.produtos/fechar.png';
+      toggleIcon.src = 'img/fechar.png';
       toggleIcon.alt = 'Fechar menu';
     } else {
-      toggleIcon.src = 'img.produtos/menu.png';
+      toggleIcon.src = 'img/menu.png';
       toggleIcon.alt = 'Menu';
     }
   });
