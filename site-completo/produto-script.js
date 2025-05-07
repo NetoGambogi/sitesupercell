@@ -16,6 +16,7 @@ async function loadProduct() {
             const img = document.querySelector('.img-produto');
             img.src = produto.imagem;
             img.alt = produto.textoalt;
+            document.querySelector('.descricao').textContent = produto.descricao; 
             document.querySelector('.preco').textContent = produto.preco;
             document.querySelector('.aviso').textContent = produto.mensagem;
         } else {

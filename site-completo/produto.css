@@ -171,10 +171,10 @@ html {
   
   .conteudo {
     display: flex;
-    align-items: center; 
-    justify-content: flex-start; 
-    gap: 40px; 
-    flex-wrap: wrap;
+    align-items: center;  /* ou center, dependendo da altura desejada */
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: nowrap; /* importante para manter lado a lado */
   }
   
   .img-produto {
@@ -191,6 +191,12 @@ html {
     font-size: 15px;
     font-style: italic;
     color: #444;
+  }
+
+  .descricao {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: black
   }
   
   .preco {
