@@ -19,7 +19,7 @@ html {
       background-color: #d9d9d9;
     }
     
-.logo img {
+  .logo img {
     height: 110px;
     width: 155px;
     margin-left: 40px;
@@ -490,11 +490,12 @@ footer {
     }
   
     footer .topo .logo img {
-      height: 80px;
+      height: 100px;
       width: auto;
       margin-bottom: 20px;
+      margin-left: 0;
     }
-  
+
     footer .separador {
       margin: 20px 0;
     }
@@ -540,8 +541,9 @@ footer {
     }
   
     footer .topo .logo img {
-      width: 120px;
-      height: auto;
+      width: auto;
+      height: 100px;
+      margin-left: 0;
     }
   
     footer .informacoes {
