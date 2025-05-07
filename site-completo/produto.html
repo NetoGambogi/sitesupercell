@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <link rel="stylesheet" href="produto.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <!-- Código VLibras -->
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  <!-- NavBar -->
+  <header>
+    <nav>
+      <div class="cabecalho">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/supercelllogo.png" alt="Assistência técnica SuperCell">
+          </a>
+        </div>
+  
+        <button class="menu-toggle" aria-label="Abrir menu">
+          <img src="img/menu.png" alt="Menu" style="height: 30px;">
+        </button>
+  
+        <a class="botao-contato" href="https://w.app/supercell" target="_blank">
+          ENTRE EM CONTATO PARA ORÇAMENTO RÁPIDO 
+          <img src="img/whatsapp.png" alt="WhatsApp" style="height: 30px;">
+        </a>
+      </div>
+  
+      <div class="barra-menu">
+        <div class="busca">
+          <img src="img/lupa.png" alt="Lupa" class="icone-busca">
+          <input type="text" class="campo-busca" placeholder="Buscar...">
+        </div>
+        <a href="servicos.html" class="item-menu">SERVIÇOS</a>
+        <a href="catalogo.html" class="item-menu">PRODUTOS</a>
+        <a href="sobre.html" class="item-menu">SOBRE A LOJA</a>
+        <a href="https://w.app/supercell" target="_blank" class="item-menu">CONTATO</a>
+      </div>
+    </nav>
+  </header>
+
+<script src="script.js"></script>
+
+<!-- BreadCrumb -->
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li>
+        <a href="index.html">Início</a>
+      </li>
+      <li>
+        <a href="catalogo.html">Produtos</a>
+      </li>
+      <li class="pg-atual" aria-current="page">
+        Compra
+      </li>
+    </ol>
+  </nav>
+
+<!-- Main -->
+
+<main>
+    <div class="container">
+        <div class="texto-superior">
+          <strong></strong>
+          <img src="img/whatsapp.png" alt="WhatsApp" class="icon-whatsapp">
+        </div>
+    
+        <div class="conteudo">
+          <img src="" alt="" class="img-produto">
+    
+          <div class="info">
+            <p class="aviso"></p>
+            <p class="preco"></p>
+    
+            <a href="#" class="botao">
+              COMPRE JÁ!
+              <img src="img/whatsapp.png" alt="WhatsApp" class="icon-botao">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <script src="produto-script.js"></script>
+
+      <!-- Outros produtos -->
+
+    <div class="titulo">
+      <h1> Conheça também outros produtos! </h1>
+    </div>
+
+    <div class="catalogo">
+        <a href="produto.html?id=carregadores" class="item">
+          <img src="img/carregador.jpg" alt="Carregadores">
+          <span>Carregadores</span>
+        </a>
+        <a href="produto.html?id=capinhas" class="item">
+          <img src="img/capinhas.png" alt="Capinhas">
+          <span>Capinhas</span>
+        </a>
+        <a href="produto.html?id=peliculas" class="item">
+          <img src="img/peliculas.png" alt="Películas">
+          <span>Películas</span>
+        </a>
+        <a href="produto.html?id=fones" class="item">
+          <img src="img/fones.jpg" alt="Fones">
+          <span>Fones</span>
+        </a>
+        <a href="produto.html?id=caixas-de-som" class="item">
+          <img src="img/caixa_som.jpg" alt="Caixas de som">
+          <span>Caixas de som</span>
+        </a>
+        <a href="produto.html?id=ringlight" class="item">
+          <img src="img/ringlight.png" alt="Ring Lights">
+          <span>Ring Lights</span>
+        </a>
+        <a href="produto.html?id=powerbanks" class="item">
+          <img src="img/powerbank.png" alt="PowerBanks">
+          <span>PowerBanks</span>
+        </a>
+        <a href="produto.html?id=bones" class="item">
+          <img src="img/bones.png" alt="Bonés">
+          <span>Bonés</span>
+        </a>
+        <a href="produto.html?id=garrafas" class="item">
+          <img src="img/garrafas.png" alt="Garrafas d'água">
+          <span>Garrafas d'água</span>
+        </a>
+        <a href="produto.html?id=copos" class="item">
+          <img src="img/copo.png" alt="Copos">
+          <span>Copos</span>
+        </a>
+      </div>
+</main>
+
+    <!-- Footer -->
+        <footer>
+            <div class="topo">
+                <div class="logo">
+                    <img src="img/supercelllogo.png" alt="SuperCell" style="height: 110px; width:155px;">
+          
+                </div>
+                <ul>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="catalogo.html">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
+                    <li><a href="https://w.app/supercell" target="_blank">Contato</a></li>
+                </ul>
+                <div class="contato">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://w.app/supercell" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+            </div>
+            <div class="separador"></div>
+            <div class="informacoes">
+              <p>
+                Feito por: Luis Antônio Gambogi, Bruna Marques, Giovanne Bartelega, Mateus Coimbra, <br>
+                Thiago Mariano, Thales Barreto, Nickson, Rhuan Martins, Lucca Soares
+              </p>
+                <div class="links">
+                    <a href="#">Política de privacidade</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+          </footer>  
+
+</body>
+</html>

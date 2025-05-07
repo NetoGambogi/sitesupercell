@@ -1,0 +1,82 @@
+[
+    {
+      "id": "carregadores",
+      "nome": "Carregadores - Consulte a disponibilidade pelo nosso WhatsApp!",
+      "imagem": "img/carregador.jpg",
+      "textoalt": "Carregadores",
+      "preco": "De R$ 30,00 até R$ 75,00",
+      "mensagem": "*Preços variam conforme o modelo"
+    },
+    {
+      "id": "capinhas",
+      "nome": "Capinhas - Consulte a disponibilidade pelo nosso WhatsApp!",
+      "imagem": "img/capinhas.png",
+      "textoalt": "Capinhas",
+      "preco": "A partir de R$ 20,00",
+      "mensagem": "*Preços variam conforme o modelo"
+    },
+    {
+        "id": "peliculas",
+        "nome": "Películas - Consulte a disponibilidade pelo nosso WhatsApp!",
+        "imagem": "img/peliculas.png",
+        "textoalt": "Películas",
+        "preco": "A partir de R$ 20,00",
+        "mensagem": "*Preços variam conforme o modelo"
+    },
+    {
+        "id": "fones",
+        "nome": "Fones - Consulte a disponibilidade pelo nosso WhatsApp!",
+        "imagem": "img/fones.jpg",
+        "textoalt": "Fones",
+        "preco": "A partir de R$ 20,00",
+        "mensagem": "*Preços variam conforme o modelo"
+    },
+    {
+        "id": "caixas-de-som",
+        "nome": "Caixas de som - Consulte a disponibilidade pelo nosso WhatsApp!",
+        "imagem": "img/caixa_som.jpg",
+        "textoalt": "Caixas de som",
+        "preco": "A partir de R$ 20,00",
+        "mensagem": "*Preços variam conforme o modelo"
+    },
+    {
+        "id": "ringlight",
+        "nome": "Ring Lights - Consulte a disponibilidade pelo nosso WhatsApp!",
+        "imagem": "img/ringlight.png",
+        "textoalt": "Ring Light",
+        "preco": "A partir de R$ 20,00",
+        "mensagem": "*Preços variam conforme o modelo"
+    },
+    {
+        "id": "powerbanks",
+        "nome": "PowerBanks - Consulte a disponibilidade pelo nosso WhatsApp!",
+        "imagem": "img/powerbank.png",
+        "textoalt": "PowerBanks",
+        "preco": "A partir de R$ 20,00",
+        "mensagem": "*Preços variam conforme o modelo"
+    },
+    {
+        "id": "bones",
+        "nome": "Bonés - Consulte a disponibilidade pelo nosso WhatsApp!",
+        "imagem": "img/bones.png",
+        "textoalt": "Bonés",
+        "preco": "A partir de R$ 20,00",
+        "mensagem": "*Preços variam conforme o modelo"
+    },
+    {
+        "id": "garrafas",
+        "nome": "Garrafas d'água - Consulte a disponibilidade pelo nosso WhatsApp!",
+        "imagem": "img/garrafas.png",
+        "textoalt": "Garrafas de água",
+        "preco": "A partir de R$ 20,00",
+        "mensagem": "*Preços variam conforme o modelo"
+    },
+    {
+        "id": "copos",
+        "nome": "Copos - Consulte a disponibilidade pelo nosso WhatsApp!",
+        "imagem": "img/copo.png",
+        "textoalt": "Copos",
+        "preco": "A partir de R$ 20,00",
+        "mensagem": "*Preços variam conforme o modelo"
+    }
+  ]
