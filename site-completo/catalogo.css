@@ -339,9 +339,10 @@ html {
       }
     
       footer .topo .logo img {
-        height: 80px;
+        height: 100px;
         width: auto;
         margin-bottom: 20px;
+        margin-left: 0;
       }
     
       footer .separador {
@@ -389,8 +390,9 @@ html {
     }
   
     footer .topo .logo img {
-      width: 120px;
-      height: auto;
+      width: auto;
+      height: 100px;
+      margin-left: 0;
     }
   
     footer .informacoes {
