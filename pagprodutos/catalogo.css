@@ -149,7 +149,9 @@ html {
 
   .titulo {
     text-align: center;
-    margin: 30px;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 30px;
   }
 
   /* Catálogo */
