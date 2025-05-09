@@ -1,0 +1,482 @@
+/* Configs Gerais */
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  html, body {
+    overflow-x: hidden;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #d9d9d9;
+  }
+  
+  /* NavBar */
+  
+  .logo img {
+    height: 110px;
+    width: 155px;
+    margin-left: 40px;
+  }
+  
+  .cabecalho {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .botao-contato {
+    background-color: #c06400;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+  
+  .botao-contato:hover {
+    background-color: #a05200;
+  }
+  
+  .barra-menu {
+    background-color: #c06400;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 20px;
+    white-space: nowrap;
+    gap: 20px;
+  }
+  
+  .busca {
+    display: flex;
+    align-items: center;
+    background-color: #a05200;
+    border-radius: 20px;
+    padding: 5px 10px;
+    min-width: 400px; 
+    flex-grow: 1;
+    max-width: 600px;
+  }
+  
+  .campo-busca {
+    background-color: #a05200;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    outline: none;
+    width: 100%;
+  }
+  
+  .campo-busca::placeholder {
+    color: #ffffff;
+  }
+  
+  .icone-busca {
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .item-menu {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .item-menu:hover {
+    text-decoration: underline;
+  }
+  
+  .menu-toggle {
+    background: none;
+    border: none;
+    display: none;
+    cursor: pointer;
+  }
+  
+  /* Início */
+  
+  .breadcrumb {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin-left: 85px;
+    margin-top: 15px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    font-weight: bold;
+  }
+  
+  .breadcrumb li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .breadcrumb li + li::before {
+    content: "/";
+    margin: 0 5px;
+    color: #999;
+  }
+  
+  .breadcrumb a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .breadcrumb .pg-atual {
+    color: #c06400;
+    font-weight: 500;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 0 20px;
+  }
+  
+  h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: bold;
+  }
+  
+  .subtext {
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  .grupo-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1 1 32%;
+    max-width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+  
+  .card h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .card p {
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  
+  .map-frame {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #2e2e2e;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .map-link {
+    color: #d92b5b;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .map-link:hover {
+    text-decoration: underline;
+  }
+  
+  .phone-number {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .whatsapp-button {
+    font-size: 20px;
+    display: inline-block;
+    background-color: #00c200;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #00a000;
+  }
+  
+  .wa-icon-img {
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  
+  .info-text {
+    font-size: 22px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .email-text {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .hours-list {
+    list-style: none;
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  /* Rodapé */
+
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}
+
+footer .topo,
+footer .informacoes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .topo ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .topo ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+}
+
+footer .topo .contato {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 25px;
+}
+
+footer .topo .contato a i {
+  color: white; 
+  transition: color 0.3s ease;
+}
+
+footer .separador {
+  width: 100%;
+  height: 1px;
+  background-color: #bdbdbd;
+  margin: 30px 0 20px;
+}
+
+footer .informacoes p {
+  font-size: 16px;
+}
+
+footer .informacoes .links a {
+  font-size: 16px;
+  margin-left: 14px;
+  text-decoration: none;
+  color: inherit;
+}
+  
+  /* Responsividade 768px */
+  
+  @media (max-width: 768px) {
+  
+    .menu-toggle {
+      display: block;
+      margin-right: 40px;
+    }
+  
+    .botao-contato {
+      display: none;
+    }
+  
+    .barra-menu {
+      display: none;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 10px;
+    }
+  
+    .barra-menu.ativo {
+      display: flex;
+    }
+  
+    .busca {
+      width: 100%;
+      justify-content: center;
+      order: 1;
+    }
+  
+    .campo-busca {
+      width: 90%;
+    }
+  
+    .item-menu {
+      text-align: center;
+      width: 100%;
+      padding: 8px 0;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      order: 2;
+    }
+
+    /*Footer responsividade*/
+
+  footer {
+    padding: 30px 20px;
+  }
+
+  footer .topo,
+  footer .informacoes {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .topo ul {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  footer .topo .contato {
+    font-size: 20px;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  footer .topo .logo img {
+    height: 100px;
+    width: auto;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+
+  footer .separador {
+    margin: 20px 0;
+  }
+
+  footer .informacoes p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  footer .informacoes .links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  footer .informacoes .links a {
+    font-size: 14px;
+    margin-left: 0;
+  }
+}
+
+  @media (max-width: 576px) {
+    .grupo-cards {
+      flex-direction: column;
+    }
+  
+    .card {
+      flex: 1 1 100%;
+    }
+
+      footer {
+    padding: 30px 20px;
+  }
+
+  footer .topo {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  footer .topo ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer .topo .contato {
+    justify-content: center;
+    font-size: 22px;
+  }
+
+  footer .topo .logo img {
+    width: auto;
+    height: 100px;
+    margin-left: 0;
+  }
+
+  footer .informacoes {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  footer .informacoes .links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 10px;
+  }
+
+  footer .informacoes p,
+  footer .informacoes .links a {
+    font-size: 14px;
+  }
+}
+  
