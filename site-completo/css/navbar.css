@@ -1,0 +1,151 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d9d9d9;
+}
+
+/* Header */
+
+.logo img {
+  height: 110px;
+  width: 155px;
+  margin-left: 40px;
+}
+
+.cabecalho {
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  display: none;
+  cursor: pointer;
+}
+
+.botao-contato {
+    background-color: #c06400;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.botao-contato:hover {
+    background-color: #a05200;
+}
+
+.barra-menu {
+  background-color: #c06400;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px 20px;
+  white-space: nowrap;
+  gap: 20px;
+}
+
+.busca {
+  display: flex;
+  align-items: center;
+  background-color: #a05200;
+  border-radius: 20px;
+  padding: 5px 10px;
+  min-width: 400px;
+  flex-grow: 1;
+  max-width: 600px;
+}
+
+.campo-busca {
+  background-color: #a05200;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  outline: none;
+  width: 100%;
+}
+
+.campo-busca::placeholder {
+  color: #ffffff;
+}
+
+.icone-busca {
+  height: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.item-menu {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.item-menu:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    margin-right: 40px;
+  }
+
+  .botao-contato {
+    display: none;
+  }
+
+  .barra-menu {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .barra-menu.ativo {
+    display: flex;
+  }
+
+  .busca {
+    width: 100%;
+    justify-content: center;
+    order: 1;
+  }
+
+  .campo-busca {
+    width: 90%;
+  }
+
+  .item-menu {
+    text-align: center;
+    width: 100%;
+    padding: 8px 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    order: 2;
+  }
+}
