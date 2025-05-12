@@ -1,3 +1,5 @@
+// Menu hamburguer
+
 document.addEventListener('DOMContentLoaded', function () {
   const toggleButton = document.querySelector('.menu-toggle');
   const menu = document.querySelector('.barra-menu');
