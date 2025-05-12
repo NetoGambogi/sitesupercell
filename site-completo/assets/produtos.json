@@ -5,7 +5,7 @@
       "imagem": "img/carregador.jpg",
       "textoalt": "Carregadores",
       "descricao": "Disponível com saídas V8 (micro USB), USB-C e Lightning (iPhone)",
-      "preco": "De R$ 30,00 até R$ 75,00",
+      "preco": "De R$ 25,00\nAté R$ 75,00",
       "mensagem": "*Preços variam conforme o modelo"
     },
     {
@@ -14,7 +14,7 @@
       "imagem": "img/capinhas.png",
       "textoalt": "Capinhas",
       "descricao": "Disponível para diversos modelos, de silicone, acrílico e superprotetoras com proteção extra",
-      "preco": "A partir de R$ 20,00",
+      "preco": "De R$ 30,00\nAté R$ 80,00",
       "mensagem": "*Preços variam conforme o modelo"
     },
     {
@@ -23,7 +23,7 @@
       "imagem": "img/peliculas.png",
       "textoalt": "Películas",
       "descricao": "Modelos: Película de privacidade, vidro temperado, gel e cerâmica",
-      "preco": "A partir de R$ 20,00",
+      "preco": "De R$ 20,00\nAté R$ 60,00",
       "mensagem": "*Preços variam conforme o modelo"
     },
     {
@@ -32,52 +32,52 @@
       "imagem": "img/fones.jpg",
       "textoalt": "Fones",
       "descricao": "Modelos com fio e sem fio (Bluetooth), intra-auriculares e headphones",
-      "preco": "A partir de R$ 20,00",
+      "preco": "Com fio: De R$ 10,00 até R$ 35,00\nSem fio: De R$ 60,00 até R$ 160,00",
       "mensagem": "*Preços variam conforme o modelo"
     },
     {
-      "id": "caixas-de-som",
-      "nome": "Caixas de som - Consulte a disponibilidade pelo nosso WhatsApp!",
-      "imagem": "img/caixa_som.jpg",
-      "textoalt": "Caixas de som",
-      "descricao": "Portáteis, com Bluetooth, bateria recarregável e diversos tamanhos",
-      "preco": "A partir de R$ 20,00",
+      "id": "cabos",
+      "nome": "Cabos - Consulte a disponibilidade pelo nosso WhatsApp!",
+      "imagem": "img/cabos.png",
+      "textoalt": "Cabos",
+      "descricao": "Cabos USB-C, USB-A, Micro USB, Lightning, HDMI, Rede e VGA.",
+      "preco": "De R$ 15,00\nAté R$ 45,00",
       "mensagem": "*Preços variam conforme o modelo"
     },
     {
-      "id": "ringlight",
-      "nome": "Ring Lights - Consulte a disponibilidade pelo nosso WhatsApp!",
-      "imagem": "img/ringlight.png",
-      "textoalt": "Ring Light",
-      "descricao": "Tamanhos variados com suporte para celular e ajuste de intensidade de luz",
-      "preco": "A partir de R$ 20,00",
+      "id": "mouse",
+      "nome": "Mouses - Consulte a disponibilidade pelo nosso WhatsApp!",
+      "imagem": "img/mouse.png",
+      "textoalt": "Mouses",
+      "descricao": "Mouses de escritório, mouses gamers com RGB, com fio e sem fio (Bluetooth)",
+      "preco": "De R$ 20,00\nAté R$ 45,00",
       "mensagem": "*Preços variam conforme o modelo"
     },
     {
-      "id": "powerbanks",
-      "nome": "PowerBanks - Consulte a disponibilidade pelo nosso WhatsApp!",
-      "imagem": "img/powerbank.png",
-      "textoalt": "PowerBanks",
-      "descricao": "Diversas capacidades (mAh), com 1 ou mais portas USB e design compacto",
-      "preco": "A partir de R$ 20,00",
+      "id": "teclado",
+      "nome": "Teclados - Consulte a disponibilidade pelo nosso WhatsApp!",
+      "imagem": "img/teclado.jpg",
+      "textoalt": "Teclados",
+      "descricao": "Modelos de teclados para escritório, gamers, de membrana e semi-mecânico.",
+      "preco": "De R$ 45,00\nAté R$ 90,00",
       "mensagem": "*Preços variam conforme o modelo"
     },
     {
-      "id": "bones",
-      "nome": "Bonés - Consulte a disponibilidade pelo nosso WhatsApp!",
-      "imagem": "img/bones.png",
-      "textoalt": "Bonés",
-      "descricao": "Modelos aba curva, aba reta e trucker, com diversas estampas e cores",
-      "preco": "A partir de R$ 20,00",
+      "id": "suporte-veicular",
+      "nome": "Suporte Veícular - Consulte a disponibilidade pelo nosso WhatsApp!",
+      "imagem": "img/suporte-veicular.png",
+      "textoalt": "Suporte veícular",
+      "descricao": "Suporte de ventosas (para-brisa), suporte de saída de ar (Grade de ventilação)",
+      "preco": "De R$ 25,00\nAté R$ 85,00",
       "mensagem": "*Preços variam conforme o modelo"
     },
     {
-      "id": "garrafas",
-      "nome": "Garrafas d'água - Consulte a disponibilidade pelo nosso WhatsApp!",
-      "imagem": "img/garrafas.png",
-      "textoalt": "Garrafas de água",
-      "descricao": "Modelos térmicos, esportivos e decorativos em várias cores e tamanhos",
-      "preco": "A partir de R$ 20,00",
+      "id": "maquina-barba",
+      "nome": "Máquinas de barbear / Cortar cabelo - Consulte a disponibilidade pelo nosso WhatsApp!",
+      "imagem": "img/maquina-barba.png",
+      "textoalt": "Máquinas de barbear ou cortar cabelo!",
+      "descricao": "Modelos elétricos com fio, recarregável (sem fio) e profissionais.",
+      "preco": "De R$ 45,00\nAté R$ 180,00",
       "mensagem": "*Preços variam conforme o modelo"
     },
     {
@@ -86,7 +86,7 @@
       "imagem": "img/copo.png",
       "textoalt": "Copos",
       "descricao": "Copos personalizados, térmicos, com canudo e modelos decorativos",
-      "preco": "A partir de R$ 20,00",
+      "preco": "De R$ 35,00\nAté R$ 85,00",
       "mensagem": "*Preços variam conforme o modelo"
     }
   ]
