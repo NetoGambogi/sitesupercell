@@ -67,8 +67,21 @@ body {
   gap: 20px;
 }
 
-.busca {
+.item-menu {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.item-menu:hover {
+  text-decoration: underline;
+}
+
+/* Campos de busca e resultados */
+
+#search-container {
   display: flex;
+  position: relative;
   align-items: center;
   background-color: #a05200;
   border-radius: 20px;
@@ -98,14 +111,44 @@ body {
   cursor: pointer;
 }
 
-.item-menu {
+#results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Mais escuro para contraste com cinza */
   color: white;
-  text-decoration: none;
-  font-weight: bold;
+  border-radius: 10px;
+  display: none;
+  z-index: 100;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* sombra mais marcada */
 }
 
-.item-menu:hover {
-  text-decoration: underline;
+.result-item {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.2s ease;
+  border-left: 4px solid #ff9900; /* Laranja queimado na borda */
+  border-radius: 4px;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.result-link {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.result-item:hover {
+  background-color: #333;
+}
+
+.result-item strong {
+  color: #ffa500; /* Laranja vibrante para o título */
+  font-size: 1.05em;
 }
 
 @media (max-width: 768px) {
@@ -145,5 +188,24 @@ body {
     padding: 8px 0;
     border-top: 1px solid rgba(255,255,255,0.2);
     order: 2;
+  }
+
+    .result-item {
+    padding: 18px;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .result-item strong {
+    font-size: 18px;
+  }
+
+    .result-link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
   }
 }

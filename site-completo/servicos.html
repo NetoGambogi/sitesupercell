@@ -7,8 +7,9 @@
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/servicos.css">
   <link rel="stylesheet" href="css/footer.css">
+  <script src="https://cdn.jsdelivr.net/npm/minisearch@6.1.0/dist/umd/index.min.js"></script>
+  <script src="assets/script.js" defer></script>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
 <body>
 
@@ -32,10 +33,12 @@
       </div>
   
       <div class="barra-menu">
-        <div class="busca">
+        <div class="busca" id="search-container">
           <img src="img/lupa.png" alt="Lupa" class="icone-busca">
-          <input type="text" class="campo-busca" placeholder="Buscar...">
-        </div>
+          <input type="text" id="searchInput" class="campo-busca" placeholder="Buscar...">
+        <div class="results" id="results"></div>
+      </div>
+      
         <a href="servicos.html" class="item-menu">SERVIÇOS</a>
         <a href="catalogo.html" class="item-menu">PRODUTOS</a>
         <a href="sobre.html" class="item-menu">SOBRE A LOJA</a>
@@ -43,10 +46,6 @@
       </div>
     </nav>
   </header>
-
-    <script src="script.js"></script>
-
-
 
   <div vw class="enabled">
     <div vw-access-button class="active"></div>

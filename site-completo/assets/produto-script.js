@@ -5,7 +5,7 @@ function getParam(param) {
 
 async function loadProduct() {
     try {
-        const response = await fetch('produtos.json');
+        const response = await fetch('./assets/produtos.json');
         const produtos = await response.json();
         const id = getParam('id');
 

@@ -7,8 +7,9 @@
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/sobre.css">
   <link rel="stylesheet" href="css/footer.css">
+  <script src="https://cdn.jsdelivr.net/npm/minisearch@6.1.0/dist/umd/index.min.js"></script>
+  <script src="assets/script.js" defer></script>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
 <body>
 
@@ -27,40 +28,39 @@
 
   <!-- Nav Bar -->
 
-<header>
-  <nav>
-    <div class="cabecalho">
-      <div class="logo">
-        <a href="index.html">
-          <img src="img/supercelllogo.png" alt="Assistência técnica SuperCell">
+  <header>
+    <nav>
+      <div class="cabecalho">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/supercelllogo.png" alt="Assistência técnica SuperCell">
+          </a>
+        </div>
+  
+        <button class="menu-toggle" aria-label="Abrir menu">
+          <img src="img/menu.png" alt="Menu" style="height: 30px;">
+        </button>
+  
+        <a class="botao-contato" href="https://w.app/supercell" target="_blank">
+          ENTRE EM CONTATO PARA ORÇAMENTO RÁPIDO 
+          <img src="img/whatsapp.png" alt="WhatsApp" style="height: 30px;">
         </a>
       </div>
-
-      <button class="menu-toggle" aria-label="Abrir menu">
-        <img src="img/menu.png" alt="Menu" style="height: 30px;">
-      </button>
-
-      <a class="botao-contato" href="https://w.app/supercell" target="_blank">
-        ENTRE EM CONTATO PARA ORÇAMENTO RÁPIDO 
-        <img src="img/whatsapp.png" alt="WhatsApp" style="height: 30px;">
-      </a>
-    </div>
-
-    <div class="barra-menu">
-      <div class="busca">
-        <img src="img/lupa.png" alt="Lupa" class="icone-busca">
-        <input type="text" class="campo-busca" placeholder="Buscar...">
+  
+      <div class="barra-menu">
+        <div class="busca" id="search-container">
+          <img src="img/lupa.png" alt="Lupa" class="icone-busca">
+          <input type="text" id="searchInput" class="campo-busca" placeholder="Buscar...">
+        <div class="results" id="results"></div>
       </div>
-      <a href="servicos.html" class="item-menu">SERVIÇOS</a>
-      <a href="catalogo.html" class="item-menu">PRODUTOS</a>
-      <a href="sobre.html" class="item-menu">SOBRE A LOJA</a>
-      <a href="contato.html" class="item-menu">CONTATO</a>
-    </div>
-  </nav>
-</header>
-
-    <script src="script.js"></script>
-
+      
+        <a href="servicos.html" class="item-menu">SERVIÇOS</a>
+        <a href="catalogo.html" class="item-menu">PRODUTOS</a>
+        <a href="sobre.html" class="item-menu">SOBRE A LOJA</a>
+        <a href="contato.html" class="item-menu">CONTATO</a>
+      </div>
+    </nav>
+  </header>
 
 <!-- Início -->
 
