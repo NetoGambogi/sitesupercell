@@ -31,6 +31,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     return;
   }
 
+  function normalizarTexto(texto) {
+    return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  }
+
   try {
     const [responseData, responseProdutos] = await Promise.all([
       fetch('./assets/data.json'),
@@ -62,7 +66,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     miniSearch.addAll(todosOsDados);
 
     input.addEventListener('input', () => {
-      const query = input.value.trim().toLowerCase();
+      const query = normalizarTexto(input.value.trim());
 
       if (query === '') {
         resultsContainer.innerHTML = '';
@@ -74,8 +78,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       if (results.length === 0) {
         results = todosOsDados.filter(item =>
-          item.title.toLowerCase().includes(query) ||
-          item.content.toLowerCase().includes(query)
+          normalizarTexto(item.title).includes(query) ||
+          normalizarTexto(item.content).includes(query)
         );
       }
 
