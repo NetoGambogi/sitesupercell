@@ -21,7 +21,7 @@ async function loadProduct() {
             // Adaptação aqui:
             document.querySelector('.preco').innerHTML = produto.preco.replace(/\n/g, '<br>');
 
-            document.querySelector('.aviso').textContent = produto.mensagem;
+            document.querySelector('.botao').href = produto.link;
         } else {
             document.querySelector('.container').innerHTML = '<p>Produto não encontrado.</p>';
         }
