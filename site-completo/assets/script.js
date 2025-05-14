@@ -113,5 +113,4 @@ function initNavbarEvents() {
 }
 
 // Garantir que os eventos sejam inicializados tanto no carregamento quanto na atualização da navbar
-document.addEventListener('DOMContentLoaded', initNavbarEvents);
 document.addEventListener('navbarLoaded', initNavbarEvents);
