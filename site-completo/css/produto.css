@@ -35,6 +35,11 @@
 
 /* Main Content */
 
+main {
+  min-width: 1010px;
+  min-height: 780px;
+}
+
 .container {
   background-color: #fff;
   border: 2px solid #000;
@@ -179,6 +184,12 @@
 /* Media Queries */
 
 @media (max-width: 1024px) {
+  
+  main {
+  min-width: 0px;
+  min-height: 0px;
+}
+  
   .container {
     margin: 20px 45px;
   }
