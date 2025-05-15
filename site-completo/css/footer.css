@@ -1,3 +1,8 @@
+.logo-footer img {
+  height: 101px;
+  width: 155px;
+}
+
 footer {
   background-color: #000000;
   color: white;
@@ -31,7 +36,11 @@ footer .topo .contato {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 25px;
+}
+
+footer .topo .contato a img {
+  width: 23px;
+  height: 23px;
 }
 
 footer .separador {
