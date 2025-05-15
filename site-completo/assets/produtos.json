@@ -2,7 +2,7 @@
     {
       "id": "carregadores",
       "nome": "Carregadores - Consulte a disponibilidade pelo nosso WhatsApp!",
-      "imagem": "img/carregador.jpg",
+      "imagem": "img/carregador.webp",
       "textoalt": "Carregadores",
       "descricao": "Disponível com saídas V8 (micro USB), USB-C e Lightning (iPhone)",
       "preco": "De R$ 25,00\nAté R$ 75,00",
@@ -11,7 +11,7 @@
     {
       "id": "capinhas",
       "nome": "Capinhas - Consulte a disponibilidade pelo nosso WhatsApp!",
-      "imagem": "img/capinhas.png",
+      "imagem": "img/capinhas.webp",
       "textoalt": "Capinhas",
       "descricao": "Disponível para diversos modelos, de silicone, acrílico e superprotetoras com proteção extra",
       "preco": "De R$ 30,00\nAté R$ 80,00",
@@ -20,7 +20,7 @@
     {
       "id": "peliculas",
       "nome": "Películas - Consulte a disponibilidade pelo nosso WhatsApp!",
-      "imagem": "img/peliculas.png",
+      "imagem": "img/peliculas.webp",
       "textoalt": "Películas",
       "descricao": "Modelos: Película de privacidade, vidro temperado, gel e cerâmica",
       "preco": "De R$ 20,00\nAté R$ 60,00",
@@ -29,7 +29,7 @@
     {
       "id": "fones",
       "nome": "Fones - Consulte a disponibilidade pelo nosso WhatsApp!",
-      "imagem": "img/fones.jpg",
+      "imagem": "img/fones.webp",
       "textoalt": "Fones",
       "descricao": "Modelos com fio e sem fio (Bluetooth), intra-auriculares e headphones",
       "preco": "Com fio: De R$ 10,00 até R$ 35,00\nSem fio: De R$ 60,00 até R$ 160,00",
@@ -38,7 +38,7 @@
     {
       "id": "cabos",
       "nome": "Cabos - Consulte a disponibilidade pelo nosso WhatsApp!",
-      "imagem": "img/cabos.png",
+      "imagem": "img/cabos.webp",
       "textoalt": "Cabos",
       "descricao": "Cabos USB-C, USB-A, Micro USB, Lightning, HDMI, Rede e VGA.",
       "preco": "De R$ 15,00\nAté R$ 45,00",
@@ -47,7 +47,7 @@
     {
       "id": "mouse",
       "nome": "Mouses - Consulte a disponibilidade pelo nosso WhatsApp!",
-      "imagem": "img/mouse.png",
+      "imagem": "img/mouse.webp",
       "textoalt": "Mouses",
       "descricao": "Mouses de escritório, mouses gamers com RGB, com fio e sem fio (Bluetooth)",
       "preco": "De R$ 20,00\nAté R$ 45,00",
@@ -56,7 +56,7 @@
     {
       "id": "teclado",
       "nome": "Teclados - Consulte a disponibilidade pelo nosso WhatsApp!",
-      "imagem": "img/teclado.jpg",
+      "imagem": "img/teclado.webp",
       "textoalt": "Teclados",
       "descricao": "Modelos de teclados para escritório, gamers, de membrana e semi-mecânico.",
       "preco": "De R$ 45,00\nAté R$ 90,00",
@@ -65,7 +65,7 @@
     {
       "id": "suporte-veicular",
       "nome": "Suporte Veícular - Consulte a disponibilidade pelo nosso WhatsApp!",
-      "imagem": "img/suporte-veicular.png",
+      "imagem": "img/suporte-veicular.webp",
       "textoalt": "Suporte veícular",
       "descricao": "Suporte de ventosas (para-brisa), suporte de saída de ar (Grade de ventilação)",
       "preco": "De R$ 25,00\nAté R$ 85,00",
@@ -74,7 +74,7 @@
     {
       "id": "maquina-barba",
       "nome": "Máquinas de barbear / Cortar cabelo - Consulte a disponibilidade pelo nosso WhatsApp!",
-      "imagem": "img/maquina-barba.png",
+      "imagem": "img/maquina-barba.webp",
       "textoalt": "Máquinas de barbear ou cortar cabelo!",
       "descricao": "Modelos elétricos com fio, recarregável (sem fio) e profissionais.",
       "preco": "De R$ 45,00\nAté R$ 180,00",
@@ -83,7 +83,7 @@
     {
       "id": "copos",
       "nome": "Copos - Consulte a disponibilidade pelo nosso WhatsApp!",
-      "imagem": "img/copo.png",
+      "imagem": "img/copo.webp",
       "textoalt": "Copos",
       "descricao": "Copos personalizados, térmicos, com canudo e modelos decorativos",
       "preco": "De R$ 35,00\nAté R$ 85,00",
