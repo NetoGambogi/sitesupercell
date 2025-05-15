@@ -159,4 +159,9 @@ h1 {
   .card {
     flex: 1 1 100%;
   }
+
+  .container header {
+  min-width: 357px;
+  min-height: 157px;
+}
 }
