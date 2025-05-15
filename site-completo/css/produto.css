@@ -199,6 +199,11 @@
   .info {
     padding: 0 20px;
   }
+
+  .container {
+  min-height: 0px;
+  min-width: 0px;
+  }
 }
 
 @media (max-width: 768px) {
