@@ -18,6 +18,7 @@ footer .topo ul {
   display: flex;
   gap: 20px;
   list-style: none;
+  margin-left: -55px;
 }
 
 footer .topo ul li a {
@@ -70,6 +71,7 @@ footer .informacoes .links a {
     flex-wrap: wrap;
     gap: 15px;
     margin-top: 20px;
+    margin-left: 0;
   }
 
   footer .topo .contato {
@@ -123,9 +125,14 @@ footer .informacoes .links a {
     gap: 10px;
   }
 
-  footer .topo .contato {
+  footer .topo ul li {
+    padding: 5px;
+  }
+
+  footer .topo .contato a {
     justify-content: center;
     font-size: 22px;
+    padding: 4px;
   }
 
   footer .topo .logo img {
@@ -146,6 +153,10 @@ footer .informacoes .links a {
     flex-direction: column;
     gap: 6px;
     margin-top: 10px;
+  }
+
+  footer .informacoes .links a {
+    padding: 5px;
   }
 
   footer .informacoes p,
