@@ -20,6 +20,8 @@ body {
 /* Header */
 
 .logo img {
+  height: 100px;
+  width: 155px;
   margin-left: 40px;
 }
 
