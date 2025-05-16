@@ -1,6 +1,5 @@
 console.log("Iniciando o carregamento da navbar...");
 
-// Verifica se a navbar está armazenada no LocalStorage
 const cachedNavbar = localStorage.getItem('navbar');
 
 if (cachedNavbar) {
