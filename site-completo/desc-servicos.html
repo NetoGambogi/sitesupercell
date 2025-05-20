@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperCell - Serviços</title>
+    <meta name="description" content="Confira os reparos / serviços que a assistência técnica de celulares e tablets SuperCell, de Varginha oferece!">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/desc-servicos.css">
+    <link rel="preload" href="css/footer.css" as="style" onload="this.rel='stylesheet'">
+    <script src="https://cdn.jsdelivr.net/npm/minisearch@6.1.0/dist/umd/index.min.js" defer></script>
+</head>
+<body>
+
+    <nav id="navbar-container"></nav>
+
+    <script src="navbar.js"></script>
+    <script src="assets/script.js" defer></script>
+
+    <!-- Código abaixo daqui -->
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li class="pg-atual" id="breadcrumb-atual" aria-current="page">...</li>
+    </ol>
+  </nav>
+
+  <div class="container">
+    <h1 id="titulo-servico">...</h1>
+    <img id="imagem-servico" src="" alt="">
+    <p id="descricao-servico">...</p>
+  </div>
+
+  <section class="etapas" id="etapas-container"></section>
+  <script src="assets/servicos-script.js"></script>
+
+<div class="botao-container">
+  <a class="contato-whats" href="https://w.app/supercell" target="_blank">
+      SOLICITE ORÇAMENTO!
+  <img src="img/whatsapp.webp" alt="WhatsApp">
+  </a>
+</div>   
+
+  <!-- Footer -->
+
+<div id="footer-container"></div>
+
+<script src="footer.js" defer></script>
+
+  <!-- Código VLibras -->
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js" defer></script>
+<script defer>
+  window.addEventListener('DOMContentLoaded', () => {
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  });
+</script>
+</body>
+</html>

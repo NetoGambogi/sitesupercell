@@ -2,7 +2,6 @@
 function initNavbarEvents() {
   console.log("Inicializando eventos da navbar...");
 
-  // Menu hambúrguer
   const toggleButton = document.querySelector('.menu-toggle');
   const menu = document.querySelector('.barra-menu');
   const botaoContato = document.querySelector('.botao-contato');
@@ -10,7 +9,11 @@ function initNavbarEvents() {
   if (toggleButton && menu && botaoContato) {
     const toggleIcon = toggleButton.querySelector('img');
 
-    toggleButton.addEventListener('click', function () {
+    // Remove event listener antigo (substituindo com clone para evitar duplicatas)
+    const newToggleButton = toggleButton.cloneNode(true);
+    toggleButton.parentNode.replaceChild(newToggleButton, toggleButton);
+
+    newToggleButton.addEventListener('click', function () {
       const isMenuActive = menu.classList.toggle('ativo');
       botaoContato.classList.toggle('ativo');
 
@@ -23,15 +26,19 @@ function initNavbarEvents() {
       }
     });
   } else {
-    console.error("Botão de menu ou elementos da barra não encontrados.");
+    console.warn("Elementos da navbar não encontrados. Tentando novamente em 100ms...");
+    setTimeout(initNavbarEvents, 100);
   }
+}
 
-  // Campo de busca
+// Função para o campo de busca
+function initSearch() {
   const input = document.getElementById('searchInput');
   const resultsContainer = document.getElementById('results');
 
   if (!input || !resultsContainer) {
-    console.error("Elemento de entrada ou contêiner de resultados não encontrado.");
+    console.warn("Campo de busca não encontrado. Tentando novamente em 100ms...");
+    setTimeout(initSearch, 100);
     return;
   }
 
@@ -39,78 +46,98 @@ function initNavbarEvents() {
     return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
   }
 
-  fetch('./assets/data.json')
-    .then(response => response.json())
-    .then(data => {
-      fetch('./assets/produtos.json')
-        .then(response => response.json())
-        .then(produtos => {
-          const produtosFormatados = produtos.map(produto => ({
-            id: produto.id,
-            title: produto.nome.replace(' - Consulte a disponibilidade pelo nosso WhatsApp!', ''),
-            content: produto.descricao,
-            page: `produto.html?id=${produto.id}`
-          }));
+  Promise.all([
+    fetch('./assets/data.json').then(r => r.json()),
+    fetch('./assets/produtos.json').then(r => r.json()),
+    fetch('./assets/servicos.json').then(r => r.json())
+  ])
+    .then(([data, produtos, servicos]) => {
+      const produtosFormatados = produtos.map(produto => ({
+        id: `produto-${produto.id}`,
+        title: produto.nome.replace(' - Consulte a disponibilidade pelo nosso WhatsApp!', ''),
+        content: produto.descricao,
+        page: `produto.html?id=${produto.id}`
+      }));
 
-          const todosOsDados = [...data, ...produtosFormatados];
+      const servicosFormatados = Object.entries(servicos).map(([slug, servico]) => ({
+        id: `servico-${slug}`,
+        title: servico.titulo,
+        content: servico.descricao,
+        page: `desc-servicos.html?servico=${slug}`
+      }));
 
-          const miniSearch = new MiniSearch({
-            fields: ['title', 'content'],
-            storeFields: ['id', 'title', 'content', 'page'],
-            searchOptions: {
-              prefix: true,
-              fuzzy: 0.2,
-              combineWords: true
-            }
-          });
+      const todosOsDados = [...data, ...produtosFormatados, ...servicosFormatados];
 
-          miniSearch.addAll(todosOsDados);
+      const miniSearch = new MiniSearch({
+        fields: ['title', 'content'],
+        storeFields: ['id', 'title', 'content', 'page'],
+        searchOptions: {
+          prefix: true,
+          fuzzy: 0.2,
+          combineWords: true
+        }
+      });
 
-          input.addEventListener('input', () => {
-            const query = normalizarTexto(input.value.trim());
+      miniSearch.addAll(todosOsDados);
 
-            if (query === '') {
-              resultsContainer.innerHTML = '';
-              resultsContainer.style.display = 'none';
-              return;
-            }
+      // Remove listener anterior se houver
+      input.replaceWith(input.cloneNode(true));
+      const novoInput = document.getElementById('searchInput');
 
-            let results = miniSearch.search(query);
+      novoInput.addEventListener('input', () => {
+        const query = normalizarTexto(novoInput.value.trim());
 
-            if (results.length === 0) {
-              results = todosOsDados.filter(item =>
-                normalizarTexto(item.title).includes(query) ||
-                normalizarTexto(item.content).includes(query)
-              );
-            }
+        if (query === '') {
+          resultsContainer.innerHTML = '';
+          resultsContainer.style.display = 'none';
+          return;
+        }
 
-            if (results.length === 0) {
-              resultsContainer.innerHTML = '<div class="result-item">Nenhum resultado encontrado.</div>';
-            } else {
-              resultsContainer.innerHTML = results.map(result => `
-                <div class="result-item">
-                  <a href="${result.page}" class="result-link">
-                    <strong>${result.title}</strong><br>
-                    <small>${result.content}</small>
-                  </a>
-                </div>
-              `).join('');
-            }
+        let results = miniSearch.search(query);
 
-            resultsContainer.style.display = 'block';
-          });
-        });
+        if (results.length === 0) {
+          results = todosOsDados.filter(item =>
+            normalizarTexto(item.title).includes(query) ||
+            normalizarTexto(item.content).includes(query)
+          );
+        }
+
+        if (results.length === 0) {
+          resultsContainer.innerHTML = '<div class="result-item">Nenhum resultado encontrado.</div>';
+        } else {
+          resultsContainer.innerHTML = results.map(result => `
+            <div class="result-item">
+              <a href="${result.page}" class="result-link">
+                <strong>${result.title}</strong><br>
+                <small>${result.content}</small>
+              </a>
+            </div>
+          `).join('');
+        }
+
+        resultsContainer.style.display = 'block';
+      });
+
+      // Clique fora da busca fecha resultados
+      document.addEventListener('click', function handleClickOutside(event) {
+        if (!novoInput.contains(event.target) && !resultsContainer.contains(event.target)) {
+          resultsContainer.style.display = 'none';
+        }
+      });
     })
     .catch(error => {
-      console.error("Erro ao carregar os dados:", error);
+      console.error("Erro ao carregar os dados da busca:", error);
     });
-
-  document.addEventListener('click', function (event) {
-    if (!input.contains(event.target) && !resultsContainer.contains(event.target)) {
-      resultsContainer.style.display = 'none';
-    }
-  });
 }
 
-// Garantir que os eventos sejam inicializados tanto no carregamento quanto na atualização da navbar
-document.addEventListener('navbarLoaded', initNavbarEvents);
+// Inicializa ao carregar a página
+document.addEventListener("DOMContentLoaded", () => {
+  initNavbarEvents();
+  initSearch();
+});
+
+// Reexecuta se a navbar for carregada dinamicamente
+document.addEventListener("navbarLoaded", () => {
+  initNavbarEvents();
+  initSearch();
+});
