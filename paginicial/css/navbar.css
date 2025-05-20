@@ -1,0 +1,289 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d9d9d9;
+}
+
+/* Header */
+
+header nav {
+  min-height: 190px;
+}
+
+.logo img {
+  height: 101px;
+  width: 155px;
+  margin-left: 40px;
+}
+
+.cabecalho {
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  display: none;
+  cursor: pointer;
+}
+
+.botao-contato {
+    background-color: #c06400;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.botao-contato:hover {
+    background-color: #a05200;
+}
+
+.barra-menu {
+  background-color: #c06400;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px 20px;
+  white-space: nowrap;
+  gap: 20px;
+}
+
+.item-menu {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.item-menu:hover {
+  text-decoration: underline;
+}
+
+/* Campos de busca e resultados */
+
+#search-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: #a05200;
+  border-radius: 20px;
+  padding: 5px 10px;
+  min-width: 400px;
+  flex-grow: 1;
+  max-width: 600px;
+}
+
+.campo-busca {
+  background-color: #a05200;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  outline: none;
+  width: 100%;
+}
+
+.campo-busca::placeholder {
+  color: #ffffff;
+}
+
+.icone-busca {
+  height: 20px;
+  margin-left: 10px;
+
+}
+
+#results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 300px;       
+  overflow-y: auto;   
+  background-color: #333; 
+  color: white;
+  border-radius: 10px;
+  display: none;
+  z-index: 100;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+  
+}
+
+.result-item {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.2s ease;
+  border-left: 4px solid #ff9900; 
+  border-radius: 4px;
+  overflow: hidden;              
+  text-overflow: ellipsis;      
+  white-space: nowrap;          
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.result-link {
+  text-decoration: none;
+  color: white;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.result-item:hover {
+  background-color: #333;
+}
+
+.result-item strong {
+  color: #ffa500; 
+  font-size: 1.05em;
+}
+
+/* Estilização scrollBar (Chrome, Safari, Edge) */
+#results::-webkit-scrollbar {
+  width: 6px;              
+}
+
+#results::-webkit-scrollbar-track {
+  background: transparent;  
+}
+
+#results::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 165, 0, 0.5);
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+#results::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 165, 0, 0.8); 
+}
+
+/* Firefox */
+#results {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 165, 0, 0.5) transparent;
+}
+
+/* Botão flutuante whats */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  background-color: #00c200;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+
+@media (max-width: 768px) {
+
+  header nav {
+    min-height: 0px;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-right: 40px;
+  }
+
+  .botao-contato {
+    display: none;
+  }
+
+  .barra-menu {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .barra-menu.ativo {
+    display: flex;
+  }
+
+  .busca {
+    width: 100%;
+    justify-content: center;
+    order: 1;
+  }
+
+  .campo-busca {
+    width: 90%;
+  }
+
+  .item-menu {
+    text-align: center;
+    width: 100%;
+    padding: 8px 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    order: 2;
+  }
+
+  #search-container {
+    min-width: unset;     
+    width: 100%;          
+    max-width: 100%;     
+    padding: 5px;         
+    border-radius: 12px;  
+  }
+
+  .campo-busca {
+    font-size: 14px;     
+    padding: 8px;         
+  }
+
+  #results {
+    font-size: 18px;      
+    max-height: 300px;    
+    overflow-y: auto;     
+  }
+
+  .result-item {
+    padding: 10px 12px;
+  }
+}

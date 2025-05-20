@@ -1,0 +1,197 @@
+{
+  "troca-de-tela": {
+    "titulo": "Troca de tela",
+    "imagem": "img/trocadetela-maior.png",
+    "descricao": "Saiba como realizamos a troca de tela de forma segura e eficiente!",
+    "etapas": [
+      {
+        "titulo": "Avaliação",
+        "texto": "O técnico verifica o estado da tela e identifica o modelo.",
+        "icone": "img/search-big.webp"
+      },
+      {
+        "titulo": "Desmontagem",
+        "texto": "Retirada cuidadosa da tela quebrada.",
+        "icone": "img/desmontagemtela.webp"
+      },
+      {
+        "titulo": "Substituição",
+        "texto": "Instalação da nova tela, com testes preliminares.",
+        "icone": "img/reparo-tela.webp"
+      },
+      {
+        "titulo": "Teste Final",
+        "texto": "Verificação completa para garantir o funcionamento.",
+        "icone": "img/testefinal.webp"
+      },
+      {
+        "titulo": "Entrega",
+        "texto": "Devolução ao cliente com garantia de serviço.",
+        "icone": "img/entrega-celular.webp"
+      }
+    ]
+  },
+
+    "desbloqueio": {
+    "titulo": "Desbloqueio de Celular",
+    "imagem": "img/desbloqueio-maior.png",
+    "descricao": "Saiba como realizamos o desbloqueio do seu celular de forma segura e eficiente!",
+    "etapas": [
+      {
+        "titulo": "Avaliação",
+        "texto": "O técnico analisa o modelo do aparelho e verifica o tipo de bloqueio (conta, operadora, senha, etc.).",
+        "icone": "img/search-big.webp"
+      },
+      {
+        "titulo": "Identificação do Método",
+        "texto": "Selecionamos o método mais seguro e eficaz de desbloqueio, conforme o tipo de bloqueio e o fabricante.",
+        "icone": "img/bloqueado.webp"
+      },
+      {
+        "titulo": "Procedimento Técnico",
+        "texto": "Executamos o desbloqueio com software especializado, mantendo os dados do cliente sempre que possível.",
+        "icone": "img/desbloqueado.webp"
+      },
+      {
+        "titulo": "Teste Final",
+        "texto": "Testamos todas as funções do aparelho para garantir que o desbloqueio foi bem-sucedido e que não houve perda de funcionalidade.",
+        "icone": "img/testefinal.webp"
+      },
+      {
+        "titulo": "Entrega",
+        "texto": "O celular ou tablet é entregue ao cliente desbloqueado, pronto para uso.",
+        "icone": "img/entrega-celular.webp"
+      }
+    ]
+  },
+
+  "troca-de-bateria": {
+    "titulo": "Troca de bateria",
+    "imagem": "img/trocadebateria-maior.png",
+    "descricao": "Realizamos a troca de bateria com segurança e componentes de qualidade!",
+    "etapas": [
+      {
+        "titulo": "Avaliação",
+        "texto": "Avaliação do estado atual da bateria e consumo do aparelho.",
+        "icone": "img/search-big.webp"
+      },
+      {
+        "titulo": "Remoção",
+        "texto": "Remoção da bateria antiga com ferramentas adequadas.",
+        "icone": "img/remocao-bateria.webp"
+      },
+      {
+        "titulo": "Instalação",
+        "texto": "Colocação da nova bateria e montagem do aparelho.",
+        "icone": "img/instalacao-bateria.webp"
+      },
+      {
+        "titulo": "Teste Final",
+        "texto": "Teste de carga, autonomia e funcionamento geral.",
+        "icone": "img/testefinal.webp"
+      },
+      {
+        "titulo": "Entrega",
+        "texto": "Devolução ao cliente com garantia de serviço.",
+        "icone": "img/entrega-celular.webp"
+      }
+    ]
+  },
+
+    "formatacao": {
+    "titulo": "Formatação",
+    "imagem": "img/formatacao-maior.png",
+    "descricao": "Saiba como realizamos a formatação do seu celular de forma segura e eficiente!",
+    "etapas": [
+      {
+        "titulo": "Avaliação",
+        "texto": "Analisamos o aparelho e o sistema para identificar falhas ou lentidão.",
+        "icone": "img/search-big.webp"
+      },
+      {
+        "titulo": "Identificação do Método",
+        "texto": "Selecionamos o tipo de formatação ideal e realizamos o backup, se necessário.",
+        "icone": "img/metodo-formatacao.webp"
+      },
+      {
+        "titulo": "Procedimento Técnico",
+        "texto": "Formatamos o aparelho com software adequado, seguindo os padrões de segurança.",
+        "icone": "img/proc-formatacao.webp"
+      },
+      {
+        "titulo": "Teste Final",
+        "texto": "Testamos o sistema e funções básicas para garantir que está tudo funcionando.",
+        "icone": "img/testefinal.webp"
+      },
+      {
+        "titulo": "Entrega",
+        "texto": "O celular ou tablet é entregue limpo, formatado e pronto para uso.",
+        "icone": "img/entrega-celular.webp"
+      }
+    ]
+  },
+    "desoxidacao": {
+    "titulo": "Desoxidação",
+    "imagem": "img/desoxidacao-maior.png",
+    "descricao": "Saiba como realizamos a desoxidação do seu celular com segurança e precisão!",
+    "etapas": [
+      {
+        "titulo": "Avaliação",
+        "texto": "Verificamos os danos causados por líquido e identificamos as áreas afetadas.",
+        "icone": "img/search-big.webp"
+      },
+      {
+        "titulo": "Identificação do Método",
+        "texto": "Escolhemos a técnica adequada de limpeza conforme o nível de oxidação.",
+        "icone": "img/metodo-desoxidacao.webp"
+      },
+      {
+        "titulo": "Procedimento Técnico",
+        "texto": "Realizamos a desoxidação com produtos e equipamentos específicos, peça por peça.",
+        "icone": "img/reparo-desoxidacao.webp"
+      },
+      {
+        "titulo": "Teste Final",
+        "texto": "Testamos o funcionamento geral do aparelho após o processo de limpeza.",
+        "icone": "img/testefinal.webp"
+      },
+      {
+        "titulo": "Entrega",
+        "texto": "O celular ou tablet é devolvido limpo, funcional e com orientações de uso.",
+        "icone": "img/entrega-celular.webp"
+      }
+    ]
+  },
+    "alto-falantes-microfone": {
+    "titulo": "Alto-falantes e Microfones",
+    "imagem": "img/altofalantes-maior.png",
+    "descricao": "Saiba como realizamos o reparo de som do seu celular com eficiência e cuidado!",
+    "etapas": [
+      {
+        "titulo": "Avaliação",
+        "texto": "Analisamos o áudio do aparelho e identificamos falhas no alto-falante ou microfone.",
+        "icone": "img/search-big.webp"
+      },
+      {
+        "titulo": "Identificação do Problema",
+        "texto": "Detectamos se o defeito é físico (peça danificada) ou por falha de software/conexão.",
+        "icone": "img/problema-altofalante.webp"
+      },
+      {
+        "titulo": "Procedimento Técnico",
+        "texto": "Fazemos a troca ou reparo dos componentes com peças e ferramentas adequadas.",
+        "icone": "img/reparo-tela.webp"
+      },
+      {
+        "titulo": "Teste Final",
+        "texto": "Testamos chamadas, gravações e sons para garantir a qualidade do áudio.",
+        "icone": "img/testefinal.webp"
+      },
+      {
+        "titulo": "Entrega",
+        "texto": "O celular ou tablet é entregue com o som funcionando perfeitamente, pronto para uso.",
+        "icone": "img/entrega-celular.webp"
+      }
+    ]
+  }
+}

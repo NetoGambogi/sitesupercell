@@ -1,0 +1,188 @@
+/* Carrossel de produtos */
+.carrossel-prod {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 15px;
+
+}
+
+.carrossel {
+  display: flex;
+  gap: 10px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; 
+  background: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  width: 120px;    
+  height: 150px;     
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+  box-sizing: border-box;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item img {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+.item span {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+/* Carrossel de produtos */
+
+/* Assistência técnica em celulares e tablets */
+.assitencia {
+    padding: 50px 85px 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.assitencia h3 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.assitencia .skill-itens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px
+}
+
+.assitencia .skill-itens .item {
+    background-color:rgb(255, 255, 255);
+    width: 250px;
+    border-radius: 10px;
+    padding: 32px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+
+
+.assitencia .skill-itens .item .imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+}
+
+.assitencia .skill-itens .item .imagem i {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    font-size: 26px;
+    color: black;
+}
+
+.assitencia .skill-itens .item h4 { 
+    font-size: 21px
+}
+
+.assitencia .skill-itens .item p{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 22px;
+    color:black;
+}
+
+/* Seção do Feedback */
+.secao-feedback {
+  padding: 40px 20px;
+  background-color: #255.255.255.0.2;
+  margin: 40px 0;
+}
+
+/* Carrossel Bootstrap */
+#feedbackCarousel {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 30px;
+}
+
+.carousel-item {
+  text-align: center;
+  padding: 20px;
+}
+
+.feedback-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #804c12;
+  margin-bottom: 20px;
+}
+
+.feedback-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.feedback-text {
+  font-size: 1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Controles (setas) */
+/* CONTROLES DO CARROSSEL - TAMANHO PEQUENO */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 30px !important;
+  height: 30px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  background-color: rgba(0,0,0,0.3) !important;
+  border-radius: 50% !important;
+  opacity: 1 !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 15px !important;
+  height: 15px !important;
+  background-size: 15px 15px !important;
+}
+
+/* Posicionamento */
+.carousel-control-prev { left: 15px !important; }
+.carousel-control-next { right: 15px !important; }
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .carousel-control-prev { left: -20px; }
+  .carousel-control-next { right: -20px; }
+
+  .feedback-name { font-size: 2rem; }
+  .feedback-text { font-size: 1.2rem; }
+}
