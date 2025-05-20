@@ -222,6 +222,10 @@ header nav {
 
 @media (max-width: 768px) {
 
+  header nav {
+    min-height: 0px;
+  }
+
   .menu-toggle {
     display: block;
     margin-right: 40px;
