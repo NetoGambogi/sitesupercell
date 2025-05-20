@@ -19,6 +19,10 @@ body {
 
 /* Header */
 
+header nav {
+  min-height: 190px;
+}
+
 .logo img {
   height: 101px;
   width: 155px;
