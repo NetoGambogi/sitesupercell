@@ -40,8 +40,8 @@
 }
 
 .container img {
-    width: 180px;
-    height: auto;
+    width: auto;
+    height: 200px;
     margin-bottom: 20px;
     transform: translateX(10px);
 }
