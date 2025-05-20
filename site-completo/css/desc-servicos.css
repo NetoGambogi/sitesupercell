@@ -127,3 +127,15 @@ h1 {
   background-color: #b75d08;
 }
 
+@media (max-width: 576px) {
+
+  .container {
+    min-height: 0px;
+  }
+
+  .etapas {
+    min-height: 0px;
+  }
+
+}
+
