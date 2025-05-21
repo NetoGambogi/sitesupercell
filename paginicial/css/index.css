@@ -58,6 +58,7 @@
 .assitencia h3 {
     font-size: 40px;
     margin-top: 20px;
+    padding: 30px;
 }
 
 .assitencia .skill-itens {
@@ -68,12 +69,9 @@
 }
 
 .assitencia .skill-itens .item {
-    background-color:rgb(255, 255, 255);
     width: 250px;
     border-radius: 10px;
-    padding: 32px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 40px;
     transition: all 0.3s ease;
 }
 
@@ -98,7 +96,9 @@
 }
 
 .assitencia .skill-itens .item h4 { 
-    font-size: 21px
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 .assitencia .skill-itens .item p{
@@ -107,6 +107,123 @@
     line-height: 22px;
     color:black;
 }
-  
 
+.vantagens {
+    padding: 50px 85px 50px;
+    margin-bottom: 25px;
+}
+
+.vantagens h3 {
+    font-size: 40px;
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+}
+
+.vantagens .skill-itens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px
+}
+
+.vantagens .skill-itens .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 500px;
+    min-height: 180px;
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    gap: 20px
+}
+
+.vantagens .skill-itens .item {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.vantagens .skill-itens .item .imagem {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vantagens .skill-itens .item .imagem img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.vantagens .skill-itens .item .imagem img:hover {
+    transform: scale(1.05);
+}
+
+.vantagens .skill-itens .item h4 { 
+    font-size: 15px
+}
+
+.vantagens .skill-itens .item p{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 22px;
+    color:black;
+}
+
+.fotos-carrosel {
+    position: relative;
+    width: 320px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.fotos-viewport {
+    overflow: hidden;
+    width: 320px;
+}
+
+.fotos-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: max-content;
+}
+
+.fotos-slider img {
+    width: 500x;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.fotos-carrosel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 8px 12px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.fotos-carrosel .prev {
+    left: 0;
+}
+
+.fotos-carrosel .next {
+    right: 0;
+}
 /* RESPONSIVIDADE */
