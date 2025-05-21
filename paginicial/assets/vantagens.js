@@ -1,4 +1,4 @@
-function initNavbarEvents() {
+function initImageSliderEvents() {
     const slider = document.querySelector('.fotos-slider');
     const images = document.querySelectorAll('.fotos-slider img');
     const prevBtn = document.querySelector('.prev');
@@ -28,3 +28,7 @@ function initNavbarEvents() {
 
     window.addEventListener('resize', updateSlider);
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    initImageSliderEvents();
+});
