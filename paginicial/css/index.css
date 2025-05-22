@@ -280,9 +280,9 @@
   overflow-wrap: break-word; 
 }
 
-.feedback .customers .card .rating {
-  font-size: 22px;
-  color: #f39c12;
+.feedback .customers .card img {
+    width: 24px;
+    height: 24px;
 }
 
 
