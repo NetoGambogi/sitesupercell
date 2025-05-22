@@ -117,7 +117,6 @@
 }
 .vantagens h3 {
     font-size: 40px;
-    margin-top: 20px;
     text-align: center;
     padding: 20px;
 }
@@ -232,6 +231,89 @@
 .fotos-carrosel .next {
     right: 0;
 }
+
+/* FEEDBACK */
+
+.feedback {
+  padding: 70px 40px; 
+  text-align: center;
+}
+
+.feedback h3 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.feedback .customers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.feedback .customers .card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: #fff;
+  width: 300px;
+  min-height: 200px; 
+  box-sizing: border-box; 
+  height: 300px;
+  overflow: hidden; 
+}
+
+.feedback .customers .card .user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.feedback .customers .card p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  overflow-wrap: break-word; 
+}
+
+.feedback .customers .card .rating {
+  font-size: 22px;
+  color: #f39c12;
+}
+
+
+.feedback .customers .card p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.feedback .customers .card .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+} 
+
+.feedback .customers .card .user img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #f39c12;
+}
+
+
+.feedback .customers .card .user .info h5 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
 /* RESPONSIVIDADE */
 
 @media (max-width: 1200px) {
@@ -259,5 +341,33 @@
     .vantagens .skill-itens {
         grid-template-columns: 1fr;
     }
+
+      .feedback {
+    padding: 40px 20px;
+    margin-bottom: 100px;
+  }
+
+  .feedback .customers {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .feedback .customers .card {
+    padding: 20px;
+    max-width: 100%; 
+  }
+
+  .feedback .customers .card p {
+    font-size: 18px;
+  }
+
+  .feedback .customers .card .user h5 {
+    font-size: 18px;
+  }
+
+  .feedback .customers .card .user p {
+    font-size: 14px;
+  }
 }
 
