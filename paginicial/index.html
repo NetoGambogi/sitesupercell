@@ -18,56 +18,85 @@
 <script src="navbar.js"></script>
 <script src="assets/script.js" defer></script>
 
-
-<!-- Carrossel de produtos -->
-<div class="carrossel-prod">
-  <div class="carrossel">
-    <button class="item">
-      <img src="img/carregador.webp" alt="Carregadores">
-      <span>CARREGADORES</span>
-    </button>
-    <button class="item">
-      <img src="img/fones.webp" alt="Fones">
-      <span>FONES</span>
-    </button>
-    <button class="item">
-      <img src="img/capinhas.webp" alt="Capinhas">
-      <span>CAPINHAS</span>
-    </button>
-    <button class="item">
-      <img src="img/caixa_som.webp" alt="Caixas de som">
-      <span>CAIXAS DE SOM</span>
-    </button>
-    <button class="item">
-      <img src="img/peliculas.webp" alt="Pelicula">
-      <span>PELICULA</span>
-    </button>
-  </div>
-</div>
-<!-- Carrossel de produtos -->
-<!-- Assistência técnica em celulares e tablets -->
-      <div class="assitencia" id="assitencia">
-        <h3> Assistência técnica em celulares e tablets </h3>
-            <div class="skill-itens">
-                <div class="item">
-                    <div class="imagem">
-                    <img src="img/Formatação.png" alt="Formatação" height=100px width = 100px> </div>
-                    <h4> Formatação </h4>
-                </div>
-
-            <div class="item">
-                <div class="imagem">
-                <img src="img/Troca_de_bateria.png" alt="Troca de bateria" height=100px width = 100px> </div>
-                <h4> Troca de Bateria </h4>
-            </div>
-
-        <div class="item">
-            <div class="imagem">
-            <img src="img/Troca_de_tela.png" alt="Troca de tela" height=100px width = 100px> </div>
-            <h4> Troca de tela </h4>
-            </div>
-        </div>
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Especialistas em Celulares e Tablets</h1>
+        <p>Conserto rápido, peças originais e garantia. Seu aparelho como novo em poucas horas!</p>
+      </div>
+      <div class="hero-image">
+        <img src="img\CelulareTablet.PNG" alt="Celular e Tablet">
+      </div>
     </div>
+    <!-- Curva SVG -->
+    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
+      <path fill="#d9d9d9" fill-opacity="1" d="M0,160 C360,280 1080,80 1440,160 L1440,320 L0,320 Z"></path>
+    </svg>
+  </header>
+
+  <!-- Serviços -->
+  <section id="servicos" class="services-section">
+    <h2>Nossos Serviços</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="img\trocaDeTela.PNG" alt="Tela quebrada" style="width: 50%;">
+        <h3>Troca de Tela</h3>
+        <p>Telas trincadas? Nós substituímos com qualidade e rapidez.</p>
+      </div>
+      <div class="service-card">
+        <img src="img\TrocaDeBateria.PNG" alt="Bateria" style="width: 50%;">
+        <h3>Reparo de Bateria</h3>
+        <p>Bateria viciada ou descarregando rápido? Resolvido aqui.</p>
+      </div>
+      <div class="service-card">
+        <img src="img\Formatação.PNG" alt="Software" style="width: 50%;">
+        <h3>Software e Backup</h3>
+        <p>Formatação, backup e recuperação de dados com segurança.</p>
+      </div>
+      <div class="service-card">
+        <img src="img\DesbloqueioDeTela.PNG" style="width: 50%;">
+        <h3>Desbloqueio</h3>
+        <p>Esqueceu a senha? Desbloqueamos seu aparelho com segurança e eficiência.</p>
+      </div>
+      <div class="service-card">
+        <img src="img\Desoxidação.PNG" style="width: 50%;">
+        <h3>Desoxidação</h3>
+        <p>Aparelho molhado? Realizamos desoxidação completa para evitar danos e recuperar seu funcionamento.</p>
+      </div>
+      <div class="service-card">
+        <img src="img\AltoFalante.PNG" style="width: 50%;">
+        <h3>Alto-falantes e microfone</h3>
+        <p>Áudio baixo ou falhando? Substituímos alto-falantes e microfones com peças de qualidade e testes rigorosos.</p>
+      </div>
+
+    </div>
+    <a href="Entre em contato" class="btn-contato">Entre em contato!</a>
+  </section>
+
+  <section class="produtos-section">
+  <h2>Acessórios em Destaque</h2>
+  <div class="produtos-carousel">
+    <div class="produto-card">
+      <img src="img\carregador.PNG" alt="Carregador">
+      <span>Carregadores</span>
+    </div>
+    <div class="produto-card">
+      <img src="img\capinha.PNG" alt="Capinha">
+      <span>Capinhas</span>
+    </div>
+    <div class="produto-card">
+      <img src="img\película.PNG" alt="Película">
+      <span>Películas</span>
+    </div>
+    <div class="produto-card">
+      <img src="img\fone.PNG" alt="Fone de ouvido">
+      <span>Fones</span>
+    </div>
+
+  </div>
+  <a href="pagina-de-produtos.html" class="btn-produtos">Ver todos os produtos</a>
+</section>
+
 
 <!-- Vantagens da Supercell -->
 <div class="vantagens" id="vantagens">

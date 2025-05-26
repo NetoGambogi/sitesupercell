@@ -1,112 +1,247 @@
-/* Carrossel de produtos */
-.carrossel-prod {
-  display: flex;
-  justify-content: center;
-  overflow-x: auto;
-  white-space: nowrap;
-  padding: 15px;
-
+.hero {
+  background: linear-gradient(to bottom, #c06400, #f56200);
+  position: relative;
+  color: white;
+  padding: 80px 20px 0;
 }
 
-.carrossel {
-  display: flex;
-  gap: 10px;
-}
-
-.item {
+.hero-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; 
-  background: white;
-  border: 2px solid black;
-  border-radius: 10px;
-  padding: 10px;
-  width: 120px;    
-  height: 150px;     
-  cursor: pointer;
-  flex-shrink: 0;
-  transition: transform 0.2s;
-  box-sizing: border-box;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  gap: 40px;
 }
 
-.item:hover {
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.btn-primary {
+  background-color: white;
+  color: #ff8800;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #fff1dc;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  max-width: 350px;
+  height: auto;
+}
+
+.wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+}
+
+/* Serviços */
+.services-section {
+  padding: 100px 20px 60px;
+  background: #d9d9d9;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+}
+
+.services-grid {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1100px;
+  margin: auto;
+}
+
+.service-card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+/* Depoimentos */
+.testimonials-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2.2rem;
+  color: #ff8800;
+  margin-bottom: 50px;
+}
+
+.testimonials {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  max-width: 1000px;
+  margin: auto;
+}
+
+.testimonial {
+  background: #fff7ed;
+  padding: 20px;
+  border-left: 5px solid #ff8800;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
+}
+
+.testimonial p {
+  font-style: italic;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.testimonial span {
+  color: #00cfc1;
+  font-weight: 600;
+}
+
+.produtos-section {
+  padding: 80px 20px;
+  background: #d9d9d9;
+  text-align: center;
+}
+
+.produtos-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.produtos-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px 0;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.produtos-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.produto-card {
+  flex: 0 0 auto;
+  width: 120px;
+  background: white;
+  border-radius: 16px;
+  padding: 20px 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  scroll-snap-align: start;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.produto-card:hover {
   transform: scale(1.05);
 }
 
-.item img {
-  width: 75px;
-  height: 75px;
-  object-fit: contain;
-  margin-bottom: 5px;
+.produto-card img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-.item span {
-  font-size: 12px;
-  font-weight: bold;
-  text-align: center;
-}
-/* Carrossel de produtos */
-
-/* Assistência técnica em celulares e tablets */
-.assitencia {
-    padding: 50px 85px 50px;
-    margin-bottom: 100px;
-    text-align: center;
+.produto-card span {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
 }
 
-.assitencia h3 {
-    font-size: 40px;
-    margin-top: 20px;
-    padding: 30px;
+/* Botão */
+.btn-produtos {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #00cfc1;
+  color: white;
+  padding: 20px 20px;
+  font-size: 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s;
+  text-decoration: none;
 }
 
-.assitencia .skill-itens {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px
+.btn-produtos:hover {
+  background-color: #00b5a8;
 }
+.produto-card {
+    width: 300px;
+    height: 200px;
+    overflow-x: scroll;
+    border: 1px solid #ccc;
+  }
 
-.assitencia .skill-itens .item {
-    width: 250px;
-    border-radius: 10px;
-    padding: 40px;
-    transition: all 0.3s ease;
+  /* Botão contato*/
+.btn-contato {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #ffa500;
+  color: white;
+  padding: 20px 20px;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  transition: 0.3s;
+  text-decoration: none;
 }
-
-
-
-.assitencia .skill-itens .item .imagem {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    margin-bottom: 22px;
-}
-
-.assitencia .skill-itens .item .imagem i {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    font-size: 26px;
-    color: black;
-}
-
-.assitencia .skill-itens .item h4 { 
-    font-size: 25px;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.assitencia .skill-itens .item p{
-    margin-top: 20px;
-    font-size: 14px;
-    line-height: 22px;
-    color:black;
-}
+  
 
 /* Vantagens */
 
@@ -140,6 +275,8 @@
     width: 500px;
     min-height: 180px;
     background-color: #f5f5f5;
+    border: 2px solid black;
+    transition: transform 0.2s;
     border-radius: 25px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -147,6 +284,10 @@
     gap: 20px;
     flex-shrink: 0;
     margin-right: 20px;
+}
+
+.item:hover {
+  transform: scale(1.05);
 }
 
 .vantagens .skill-itens .item {
