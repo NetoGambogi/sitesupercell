@@ -412,6 +412,54 @@ html, body {
     right: 0;
 }
 
+/* um pouco sobre sós */
+.sobre-nos {
+  text-align: center;
+  padding: 60px 20px;
+  background: #d9d9d9;
+  font-family: Arial, sans-serif;
+}
+
+.sobre-nos h3 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+
+.cartoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.cartao {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.cartao img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.cartao h4 {
+  font-size: 21px;
+  color: #c06400;
+  margin: 10px 0;
+}
+
+.cartao p {
+  font-size: 16px;
+}
+
 /* FEEDBACK */
 
 .feedback {
@@ -515,6 +563,17 @@ html, body {
         padding: 16px 12px;
         height: 100%; 
     }
+}
+
+@media (max-width: 768px) {
+  .cartoes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cartao {
+    width: 90%;
+  }
 }
 
 @media (max-width: 600px) {
