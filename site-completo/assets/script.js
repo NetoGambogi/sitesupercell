@@ -1,4 +1,3 @@
-// Função para inicializar os eventos da navbar
 function initNavbarEvents() {
   console.log("Inicializando eventos da navbar...");
 
@@ -7,11 +6,11 @@ function initNavbarEvents() {
   const botaoContato = document.querySelector('.botao-contato');
 
   if (toggleButton && menu && botaoContato) {
-    const toggleIcon = toggleButton.querySelector('img');
-
-    // Remove event listener antigo (substituindo com clone para evitar duplicatas)
+    // Substitui o botão antigo por um clone sem eventos antigos
     const newToggleButton = toggleButton.cloneNode(true);
     toggleButton.parentNode.replaceChild(newToggleButton, toggleButton);
+
+    const toggleIcon = newToggleButton.querySelector('img'); // <-- Aqui está o fix
 
     newToggleButton.addEventListener('click', function () {
       const isMenuActive = menu.classList.toggle('ativo');

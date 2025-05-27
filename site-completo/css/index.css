@@ -1,114 +1,552 @@
-/* Carrossel de produtos */
-.carrossel-prod {
-  display: flex;
-  justify-content: center;
-  overflow-x: auto;
-  white-space: nowrap;
-  padding: 15px;
-
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-.carrossel {
-  display: flex;
-  gap: 10px;
+.hero {
+  background: linear-gradient(to bottom, #c06400, #f56200);
+  position: relative;
+  color: white;
+  padding: 80px 20px 0;
 }
 
-.item {
+.hero-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; 
-  background: white;
-  border: 2px solid black;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.btn-primary {
+  background-color: white;
+  color: #ff8800;
+  padding: 12px 28px;
   border-radius: 10px;
-  padding: 10px;
-  width: 120px;    
-  height: 150px;     
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #fff1dc;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  max-width: 350px;
+  height: auto;
+}
+
+.wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+}
+
+/* Serviços */
+.services-section {
+  padding: 100px 20px 60px;
+  background: #d9d9d9;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+}
+
+.services-grid {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1100px;
+  margin: auto;
+}
+
+.service-card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
   cursor: pointer;
-  flex-shrink: 0;
-  transition: transform 0.2s;
-  box-sizing: border-box;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  height: 130px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+/* Depoimentos */
+.testimonials-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2.2rem;
+  color: #ff8800;
+  margin-bottom: 50px;
+}
+
+.testimonials {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  max-width: 1000px;
+  margin: auto;
+}
+
+.testimonial {
+  background: #fff7ed;
+  padding: 20px;
+  border-left: 5px solid #ff8800;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
+}
+
+.testimonial p {
+  font-style: italic;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.testimonial span {
+  color: #00cfc1;
+  font-weight: 600;
+}
+
+.produtos-section {
+  padding: 80px 20px;
+  background: #d9d9d9;
+  text-align: center;
+}
+
+.produtos-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.produtos-carousel {
+  display: flex;
+  justify-content: flex-start; 
+  gap: 20px;
+  padding: 10px 20px;
+  scroll-snap-type: x mandatory;
+  margin: 0 auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: thin;
+}
+
+@media (min-width: 1310px) {
+  .produtos-carousel {
+    justify-content: center;
+    overflow-x: hidden; 
+  }
+}
+
+/* Estilização scrollBar (Chrome, Safari, Edge) */
+.produtos-carousel::-webkit-scrollbar {
+  width: 6px;              
+}
+
+.produtos-carousel::-webkit-scrollbar-track {
+  background: transparent;  
+}
+
+.produtos-carousel::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 165, 0, 0.5);
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.produtos-carousel::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 165, 0, 0.8); 
+}
+
+/* Firefox */
+.produtos-carousel {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 165, 0, 0.5) transparent;
+}
+
+.produto-card {
+  flex: 0 0 auto;
+  width: 120px;
+  background: white;
+  border-radius: 16px;
+  padding: 20px 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  scroll-snap-align: start;
+  transition: transform 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.produto-card:hover {
+  transform: scale(1.05);
+}
+
+.produto-card img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.produto-card span {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  font-size: 22px;
+}
+
+/* Botão */
+.btn-produtos {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #00cfc1;
+  color: white;
+  padding: 20px 20px;
+  font-size: 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.btn-produtos:hover {
+  background-color: #00b5a8;
+}
+.produto-card {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+  }
+
+  /* Botão contato*/
+.btn-contato {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #e98e06;
+  color: white;
+  padding: 20px 20px;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  transition: 0.3s;
+  text-decoration: none;
+}
+  
+.btn-contato:hover {
+  background-color: #c06400;
+}
+
+/* Vantagens */
+
+
+.vantagens {
+    padding: 50px 85px 50px;
+    margin-bottom: 25px;
+}
+.vantagens h3 {
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.vantagens .skill-itens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;       
+    align-items: center;          
+    max-width: 1000px;             
+    margin: 0 auto;                
+    padding: 0 20px;
+}
+
+.vantagens .skill-itens .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 500px;
+    min-height: 180px;
+    background-color: #f5f5f5;
+    border: 2px solid black;
+    transition: transform 0.2s;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    gap: 20px;
+    flex-shrink: 0;
+    margin-right: 20px;
 }
 
 .item:hover {
   transform: scale(1.05);
 }
 
-.item img {
-  width: 75px;
-  height: 75px;
-  object-fit: contain;
-  margin-bottom: 5px;
+.vantagens .skill-itens .item {
+    flex-shrink: 0;
+    margin-right: 20px;
 }
 
-.item span {
-  font-size: 12px;
-  font-weight: bold;
-  text-align: center;
-}
-/* Carrossel de produtos */
-
-/* Assistência técnica em celulares e tablets */
-.assitencia {
-    padding: 50px 85px 50px;
-    margin-bottom: 100px;
-    text-align: center;
-}
-
-.assitencia h3 {
-    font-size: 40px;
-    margin-top: 20px;
-}
-
-.assitencia .skill-itens {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px
-}
-
-.assitencia .skill-itens .item {
-    background-color:rgb(255, 255, 255);
-    width: 250px;
-    border-radius: 10px;
-    padding: 32px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-
-
-
-.assitencia .skill-itens .item .imagem {
+.vantagens .skill-itens .item .imagem {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255, 255, 255);
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    margin-bottom: 22px;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
 }
 
-.assitencia .skill-itens .item .imagem i {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    font-size: 26px;
-    color: black;
+.vantagens .skill-itens .item .imagem img:hover {
+    transform: scale(1.05);
 }
 
-.assitencia .skill-itens .item h4 { 
-    font-size: 21px
+.vantagens .skill-itens .item h4 { 
+    font-size: 22px
 }
 
-.assitencia .skill-itens .item p{
+.vantagens .skill-itens .item p{
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 22px;
     color:black;
 }
-  
+
+.fotos-carrosel {
+    position: relative;
+    width: 320px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.fotos-viewport {
+    overflow: hidden;
+    width: 320px;
+}
+
+.fotos-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: max-content;
+}
+
+.fotos-slider img {
+    width: 500x;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.fotos-carrosel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 8px 12px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.fotos-carrosel .prev {
+    left: 0;
+}
+
+.fotos-carrosel .next {
+    right: 0;
+}
+
+/* FEEDBACK */
+
+.feedback {
+  padding: 70px 40px; 
+  text-align: center;
+}
+
+.feedback h3 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.feedback .customers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.feedback .customers .card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: #fff;
+  width: 300px;
+  min-height: 200px; 
+  box-sizing: border-box; 
+  height: 300px;
+  overflow: hidden; 
+}
+
+.feedback .customers .card .user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.feedback .customers .card p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  overflow-wrap: break-word; 
+}
+
+.feedback .customers .card img {
+    width: 24px;
+    height: 24px;
+}
+
+
+.feedback .customers .card p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.feedback .customers .card .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+} 
+
+.feedback .customers .card .user img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #f38a12;
+}
+
+
+.feedback .customers .card .user .info h5 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
 
 /* RESPONSIVIDADE */
+
+@media (max-width: 1200px) {
+    .vantagens {
+        padding: 20px 10px;
+    }
+
+    .vantagens .skill-itens {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 16px;
+    }
+
+    .vantagens .skill-itens .item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        padding: 16px 12px;
+        height: 100%; 
+    }
+}
+
+@media (max-width: 600px) {
+    .vantagens .skill-itens {
+        grid-template-columns: 1fr;
+    }
+
+      .feedback {
+    padding: 40px 20px;
+    margin-bottom: 100px;
+  }
+
+  .feedback .customers {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .feedback .customers .card {
+    padding: 20px;
+    max-width: 100%; 
+  }
+
+  .feedback .customers .card p {
+    font-size: 18px;
+  }
+
+  .feedback .customers .card .user h5 {
+    font-size: 18px;
+  }
+
+  .feedback .customers .card .user p {
+    font-size: 14px;
+  }
+}

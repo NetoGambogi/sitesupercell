@@ -1,7 +1,7 @@
 {
   "troca-de-tela": {
     "titulo": "Troca de tela",
-    "imagem": "img/trocadetela-maior.png",
+    "imagem": "img/trocadetela-maior.webp",
     "descricao": "Saiba como realizamos a troca de tela de forma segura e eficiente!",
     "etapas": [
       {
@@ -34,7 +34,7 @@
 
     "desbloqueio": {
     "titulo": "Desbloqueio de Celular",
-    "imagem": "img/desbloqueio-maior.png",
+    "imagem": "img/desbloqueio-maior.webp",
     "descricao": "Saiba como realizamos o desbloqueio do seu celular de forma segura e eficiente!",
     "etapas": [
       {
@@ -67,7 +67,7 @@
 
   "troca-de-bateria": {
     "titulo": "Troca de bateria",
-    "imagem": "img/trocadebateria-maior.png",
+    "imagem": "img/trocadebateria-maior.webp",
     "descricao": "Realizamos a troca de bateria com segurança e componentes de qualidade!",
     "etapas": [
       {
@@ -100,7 +100,7 @@
 
     "formatacao": {
     "titulo": "Formatação",
-    "imagem": "img/formatacao-maior.png",
+    "imagem": "img/formatacao-maior.webp",
     "descricao": "Saiba como realizamos a formatação do seu celular de forma segura e eficiente!",
     "etapas": [
       {
@@ -132,7 +132,7 @@
   },
     "desoxidacao": {
     "titulo": "Desoxidação",
-    "imagem": "img/desoxidacao-maior.png",
+    "imagem": "img/desoxidacao-maior.webp",
     "descricao": "Saiba como realizamos a desoxidação do seu celular com segurança e precisão!",
     "etapas": [
       {
@@ -164,7 +164,7 @@
   },
     "alto-falantes-microfone": {
     "titulo": "Alto-falantes e Microfones",
-    "imagem": "img/altofalantes-maior.png",
+    "imagem": "img/altofalantes-maior.webp",
     "descricao": "Saiba como realizamos o reparo de som do seu celular com eficiência e cuidado!",
     "etapas": [
       {
