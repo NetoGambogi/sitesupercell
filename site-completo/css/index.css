@@ -21,6 +21,14 @@ html, body {
   gap: 40px;
 }
 
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+}
+
 .hero-text {
   flex: 1;
 }
@@ -175,6 +183,13 @@ html, body {
   overflow-y: hidden;
   white-space: nowrap;
   scrollbar-width: thin;
+}
+
+@media (min-width: 1310px) {
+  .produtos-carousel {
+    justify-content: center;
+    overflow-x: hidden; 
+  }
 }
 
 /* Estilização scrollBar (Chrome, Safari, Edge) */
@@ -529,13 +544,6 @@ html, body {
 
 /* RESPONSIVIDADE */
 
-@media (min-width: 1310px) {
-  .produtos-carousel {
-    justify-content: center;
-    overflow-x: hidden; 
-  }
-}
-
 @media (max-width: 1200px) {
     .vantagens {
         padding: 20px 10px;
@@ -558,13 +566,6 @@ html, body {
 }
 
 @media (max-width: 768px) {
-
-    .hero-content {
-    flex-direction: row;
-    text-align: left;
-    justify-content: space-between;
-  }
-
   .cartoes {
     flex-direction: column;
     align-items: center;
