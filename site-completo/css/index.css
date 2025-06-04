@@ -327,7 +327,6 @@ html, body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     box-sizing: border-box;
     gap: 20px;
-    flex-shrink: 0;
     margin-right: 20px;
 }
 
@@ -335,13 +334,7 @@ html, body {
   transform: scale(1.05);
 }
 
-.vantagens .skill-itens .item {
-    flex-shrink: 0;
-    margin-right: 20px;
-}
-
 .vantagens .skill-itens .item .imagem {
-    flex-shrink: 0;
     width: 80px;
     height: 80px;
     display: flex;
