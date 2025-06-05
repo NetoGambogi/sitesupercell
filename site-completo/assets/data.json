@@ -2,5 +2,6 @@
     {"id": 1, "title": "Sobre nós", "content": "Sobre a loja SuperCell", "page": "sobre.html"},
     {"id": 2, "title": "Produtos", "content": "Nosso catálogo", "page": "catalogo.html"},
     {"id": 3, "title": "Serviços", "content": "Reparos de celulares e tablets" ,  "page": "servicos.html"},
-    {"id": 4, "title": "Contato", "content": "Entre em contato conosco!" ,  "page": "contato.html"}
+    {"id": 4, "title": "Contato", "content": "Entre em contato conosco!" ,  "page": "contato.html"},
+    {"id": 5, "title": "Início", "content": "Página inicial", "page": "index.html"}
 ]

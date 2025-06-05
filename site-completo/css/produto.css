@@ -269,3 +269,12 @@ main {
     height: 26px;
   }
 }
+
+  @media (max-width: 500px) {
+    
+  .breadcrumb {
+    margin-top: 20px;
+    font-size: 18px;        
+    margin-left: 30px;         
+  }
+}

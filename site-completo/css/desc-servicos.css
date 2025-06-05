@@ -136,6 +136,15 @@ h1 {
   .etapas {
     min-height: 0px;
   }
-
 }
+
+  @media (max-width: 500px) {
+    
+  .breadcrumb {
+    margin-top: 20px;
+    font-size: 18px;        
+    margin-left: 10px;         
+  }
+}
+
 
